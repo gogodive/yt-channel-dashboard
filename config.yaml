@@ -1,0 +1,11 @@
+channels:
+  - name: 고고다이브
+    handle: gogodive
+
+display_limit: 120
+freeze_days: 30
+
+ai_comment:
+  model: claude-opus-4-8
+  max_hits: 10        # AI에 보낼 히트 썸네일 최대 개수
+  max_baseline: 6     # 비교용 평균 성과 썸네일 개수

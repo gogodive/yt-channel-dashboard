@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>자사 유튜브 데일리 대시보드</title>
+<style>
+  :root { --line:#e0e0e0; --sub:#737373; --accent:#ff0000; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+         background:#f9f9f9; color:#0f0f0f; }
+  header { background:#fff; border-bottom:1px solid var(--line); padding:14px 16px;
+           display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; }
+  header h1 { font-size:17px; }
+  header .updated { color:var(--sub); font-size:12px; }
+  nav { background:#fff; border-bottom:1px solid var(--line); display:flex;
+        overflow-x:auto; position:sticky; top:0; z-index:10; }
+  nav button { flex:1; min-width:110px; padding:12px 8px; border:0; background:none;
+               font-size:14px; cursor:pointer; border-bottom:2px solid transparent; color:var(--sub); }
+  nav button.active { color:#0f0f0f; font-weight:600; border-bottom-color:#0f0f0f; }
+  .meta { padding:12px 16px; font-size:13px; color:var(--sub); }
+  .wrap { max-width:1000px; margin:0 auto; padding:0 16px 40px; }
+  h2 { font-size:15px; margin:20px 0 12px; }
+  h2 .cnt { color:var(--sub); font-weight:400; font-size:13px; }
+  .ai { background:#fff; border:1px solid var(--line); border-left:4px solid #7c4dff;
+        border-radius:8px; padding:14px 16px; margin:16px 0; }
+  .ai .ai-title { font-weight:600; font-size:14px; margin-bottom:8px; }
+  .ai .ai-body { font-size:13px; line-height:1.7; white-space:pre-line; }
+  .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .grid.shorts { grid-template-columns:repeat(5,1fr); }
+  .card { background:#fff; border:1px solid var(--line); border-radius:10px; overflow:hidden; }
+  .thumb { position:relative; display:block; aspect-ratio:16/9; background:#eee; }
+  .thumb img { width:100%; height:100%; object-fit:cover; display:block; }
+  .badge { position:absolute; top:8px; left:8px; font-size:11px; padding:2px 8px;
+           border-radius:10px; color:#fff; }
+  .badge.live { background:#2962ff; }
+  .badge.frozen { background:#8e8e8e; }
+  .badge.hot { left:auto; right:8px; background:#ff5722; font-weight:700;
+               font-size:14px; padding:4px 10px; border-radius:14px;
+               box-shadow:0 2px 8px rgba(255,87,34,.5); }
+  .dur { position:absolute; bottom:6px; right:6px; background:rgba(0,0,0,.8); color:#fff;
+         font-size:11px; padding:1px 5px; border-radius:4px; }
+  .card.hot { border:3px solid #ff9800; box-shadow:0 0 12px rgba(255,152,0,.45); }
+  .info { padding:10px 12px; }
+  .date { font-size:12px; color:var(--sub); }
+  .title { font-size:13px; margin:4px 0 8px; overflow:hidden; display:-webkit-box;
+           -webkit-line-clamp:2; -webkit-box-orient:vertical; line-height:1.4; min-height:2.8em; }
+  .metrics { display:flex; flex-wrap:wrap; gap:8px 12px; font-size:12px; }
+  .metrics span b { font-weight:600; }
+  .empty { text-align:center; color:var(--sub); padding:40px 0; grid-column:1/-1; }
+  .stale { background:#fff8e1; border:1px solid #ffe082; border-radius:6px;
+           margin:12px 0; padding:8px 12px; font-size:12px; color:#8d6e00; }
+  section { display:none; } section.active { display:block; }
+  @media (max-width:700px){
+    .grid{ grid-template-columns:repeat(2,1fr); gap:8px; }
+    .grid.shorts{ grid-template-columns:repeat(3,1fr); }
+    .info{ padding:6px 8px; } .title{ font-size:12px; }
+    .metrics{ gap:4px 8px; font-size:10px; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>자사 유튜브 데일리 대시보드</h1>
+  <span class="updated">마지막 갱신: {{ generated_label }} (매일 07:00 자동 갱신)</span>
+</header>
+<nav>
+  {% for acc in accounts %}
+  <button data-tab="{{ loop.index0 }}"{% if loop.first %} class="active"{% endif %}>{{ acc.brand }}</button>
+  {% endfor %}
+</nav>
+{% for acc in accounts %}
+<section id="tab-{{ loop.index0 }}"{% if loop.first %} class="active"{% endif %}>
+  <div class="wrap">
+    <div class="meta">@{{ acc.handle }}
+      {% if acc.subscribers %}· 구독자 {{ acc.subscribers | num }}{% endif %}</div>
+    {% if acc._stale_date %}
+    <div class="stale">⚠️ 이 채널은 {{ acc._stale_date }} 데이터입니다 (최근 수집 실패)</div>
+    {% endif %}
+    {% if acc._ai_comment %}
+    <div class="ai">
+      <div class="ai-title">🤖 AI 썸네일 분석 (히트 영상 기준)</div>
+      <div class="ai-body">{{ acc._ai_comment }}</div>
+    </div>
+    {% endif %}
+
+    <h2>롱폼 <span class="cnt">{{ acc._long | length }}개</span></h2>
+    <div class="grid">
+      {% for v in acc._long %}
+      <div class="card{% if v._hot %} hot{% endif %}">
+        <a class="thumb" href="{{ v.url }}" target="_blank" rel="noopener">
+          {% if v.frozen %}<span class="badge frozen">확정</span>
+          {% else %}<span class="badge live">집계중 D+{{ v._days }}</span>{% endif %}
+          {% if v._hot %}<span class="badge hot">{{ v._hot }}</span>{% endif %}
+          <img src="{{ v.thumbnail }}" alt="" loading="lazy">
+          {% if v.duration %}<span class="dur">{{ v.duration | dur }}</span>{% endif %}
+        </a>
+        <div class="info">
+          <div class="date">{{ v.published_at | date }}</div>
+          <div class="title">{{ v.title }}</div>
+          <div class="metrics">
+            <span>▶ <b>{{ v.metrics.views | num }}</b></span>
+            <span>👍 <b>{{ v.metrics.likes | num }}</b></span>
+            <span>💬 <b>{{ v.metrics.comments | num }}</b></span>
+          </div>
+        </div>
+      </div>
+      {% else %}
+      <div class="empty">롱폼 영상이 없습니다</div>
+      {% endfor %}
+    </div>
+
+    <h2>쇼츠 <span class="cnt">{{ acc._shorts | length }}개</span></h2>
+    <div class="grid shorts">
+      {% for v in acc._shorts %}
+      <div class="card{% if v._hot %} hot{% endif %}">
+        <a class="thumb" href="{{ v.url }}" target="_blank" rel="noopener">
+          {% if v.frozen %}<span class="badge frozen">확정</span>
+          {% else %}<span class="badge live">D+{{ v._days }}</span>{% endif %}
+          {% if v._hot %}<span class="badge hot">{{ v._hot }}</span>{% endif %}
+          <img src="{{ v.thumbnail }}" alt="" loading="lazy">
+          {% if v.duration %}<span class="dur">{{ v.duration | dur }}</span>{% endif %}
+        </a>
+        <div class="info">
+          <div class="date">{{ v.published_at | date }}</div>
+          <div class="title">{{ v.title }}</div>
+          <div class="metrics">
+            <span>▶ <b>{{ v.metrics.views | num }}</b></span>
+            <span>👍 <b>{{ v.metrics.likes | num }}</b></span>
+          </div>
+        </div>
+      </div>
+      {% else %}
+      <div class="empty">쇼츠 영상이 없습니다</div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endfor %}
+<script>
+document.querySelectorAll("nav button").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll("nav button").forEach(b => b.classList.remove("active"));
+    document.querySelectorAll("section").forEach(s => s.classList.remove("active"));
+    btn.classList.add("active");
+    document.getElementById("tab-" + btn.dataset.tab).classList.add("active");
+  });
+});
+</script>
+</body>
+</html>
