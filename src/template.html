@@ -28,6 +28,25 @@
   .ai .ai-title { font-weight:600; font-size:14px; margin-bottom:8px; }
   .ai .ai-date { color:var(--sub); font-weight:400; font-size:12px; margin-left:8px; }
   .ai .ai-body { font-size:13px; line-height:1.7; white-space:pre-line; }
+  .chart-panel { background:#fff; border:1px solid var(--line); border-radius:10px;
+                 padding:14px 16px; margin:16px 0; }
+  .chart-head { display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin-bottom:4px; }
+  .chart-head h2 { margin:0; }
+  .chart-hint { color:var(--sub); font-size:12px; }
+  .toggle { display:inline-flex; border:1px solid var(--line); border-radius:6px;
+            overflow:hidden; margin-left:auto; }
+  .toggle button { border:0; background:#fff; padding:4px 12px; font-size:12px;
+                   cursor:pointer; color:var(--sub); }
+  .toggle button.on { background:#0f0f0f; color:#fff; }
+  .chart-sub { font-size:13px; font-weight:600; margin:10px 0 2px; }
+  .chart-sub .legend { float:right; font-weight:400; font-size:12px; color:#404040; }
+  .chart-sub .legend i { display:inline-block; width:9px; height:9px; border-radius:50%;
+                         margin:0 4px 0 12px; vertical-align:-1px; }
+  .chart svg { width:100%; height:auto; display:block; }
+  .chart-tip { position:fixed; pointer-events:none; background:#0f0f0f; color:#fff;
+               font-size:12px; padding:8px 10px; border-radius:6px; max-width:280px;
+               line-height:1.5; display:none; z-index:30; }
+  .chart-tip .tv { color:#bdbdbd; }
   .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
   .grid.shorts { grid-template-columns:repeat(5,1fr); }
   .card { background:#fff; border:1px solid var(--line); border-radius:10px; overflow:hidden; }
@@ -87,6 +106,28 @@
     </div>
     {% endif %}
 
+    {% if acc._chart %}
+    <div class="chart-panel">
+      <div class="chart-head">
+        <h2>조회수 추이 (최근 2년)</h2>
+        <span class="chart-hint">점 하나 = 영상 1개 · 점에 마우스를 올리면 제목이 보입니다</span>
+        <div class="toggle">
+          <button data-scale="lin" data-acc="{{ loop.index0 }}" class="on">선형 축</button>
+          <button data-scale="log" data-acc="{{ loop.index0 }}">로그 축</button>
+        </div>
+      </div>
+      <div class="chart-sub">롱폼
+        <span class="legend"><i style="background:#2962ff"></i>일반<i style="background:#ff5722"></i>🔥 히트</span>
+      </div>
+      <div class="chart" data-acc="{{ loop.index0 }}" data-fmt="long"></div>
+      <div class="chart-sub">쇼츠
+        <span class="legend"><i style="background:#2962ff"></i>일반<i style="background:#ff5722"></i>🔥 히트</span>
+      </div>
+      <div class="chart" data-acc="{{ loop.index0 }}" data-fmt="shorts"></div>
+      <script type="application/json" id="chart-data-{{ loop.index0 }}">{{ acc._chart | tojson }}</script>
+    </div>
+    {% endif %}
+
     <h2>롱폼 <span class="cnt">{{ acc._long | length }}개</span></h2>
     <div class="grid">
       {% for v in acc._long %}
@@ -140,6 +181,7 @@
   </div>
 </section>
 {% endfor %}
+<div class="chart-tip" id="chart-tip"></div>
 <script>
 document.querySelectorAll("nav button").forEach(btn => {
   btn.addEventListener("click", () => {
@@ -149,6 +191,105 @@ document.querySelectorAll("nav button").forEach(btn => {
     document.getElementById("tab-" + btn.dataset.tab).classList.add("active");
   });
 });
+
+// ── 조회수 추이 산점도 ──────────────────────────────────────────────
+(function () {
+  const W = 960, H = 300, M = { t: 14, r: 16, b: 34, l: 56 };
+  const scales = {};  // acc index → 'lin' | 'log'
+  const fmtNum = n => n >= 1e8 ? (n / 1e8) + "억" : n >= 1e4 ? (+(n / 1e4).toFixed(1)) + "만"
+    : n >= 1e3 ? (+(n / 1e3).toFixed(1)) + "천" : "" + n;
+
+  function ticksLog(min, max) {
+    const out = [];
+    for (let e = 1; e <= 9; e++) for (const m of [1, 3]) {
+      const v = m * 10 ** e;
+      if (v >= min * 0.9 && v <= max * 1.15) out.push(v);
+    }
+    return out;
+  }
+  function ticksLin(max) {
+    const base = Math.pow(10, Math.floor(Math.log10(max / 4)));
+    const step = [1, 2, 5, 10].map(x => x * base).find(x => max / x <= 5) || base;
+    const out = [];
+    for (let v = step; v <= max * 1.02; v += step) out.push(v);
+    return out;
+  }
+  function esc(s) { return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;"); }
+
+  function draw(el, pts, scale) {
+    if (!pts.length) { el.innerHTML = '<div style="color:#737373;font-size:12px;padding:12px 0">데이터 없음</div>'; return; }
+    const dates = pts.map(p => +new Date(p.d)), views = pts.map(p => p.v);
+    const x0 = Math.min(...dates), x1 = Math.max(...dates);
+    const vMax = Math.max(...views), vMin = Math.min(...views);
+    const X = t => x1 === x0 ? (M.l + W - M.r) / 2
+      : M.l + (+new Date(t) - x0) / (x1 - x0) * (W - M.l - M.r);
+    const Y = scale === "log"
+      ? v => H - M.b - (Math.log10(v) - Math.log10(vMin * 0.9)) /
+             (Math.log10(vMax * 1.15) - Math.log10(vMin * 0.9) || 1) * (H - M.t - M.b)
+      : v => H - M.b - (v / (vMax * 1.05)) * (H - M.t - M.b);
+    const yt = scale === "log" ? ticksLog(vMin, vMax) : ticksLin(vMax);
+    let s = `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">`;
+    if (scale !== "log")
+      s += `<text x="${M.l - 8}" y="${H - M.b + 4}" text-anchor="end" font-size="11" fill="#737373">0</text>`;
+    for (const v of yt) {
+      const y = Y(v);
+      if (y < M.t) continue;
+      s += `<line x1="${M.l}" y1="${y}" x2="${W - M.r}" y2="${y}" stroke="#eee"/>` +
+           `<text x="${M.l - 8}" y="${y + 4}" text-anchor="end" font-size="11" fill="#737373">${fmtNum(v)}</text>`;
+    }
+    const d0 = new Date(x0);
+    let tick = new Date(d0.getFullYear(), Math.ceil(d0.getMonth() / 3) * 3, 1);
+    while (+tick <= x1) {
+      const x = X(tick);
+      s += `<line x1="${x}" y1="${H - M.b}" x2="${x}" y2="${H - M.b + 4}" stroke="#bdbdbd"/>` +
+           `<text x="${x}" y="${H - M.b + 18}" text-anchor="middle" font-size="11" fill="#737373">` +
+           `${tick.getFullYear().toString().slice(2)}.${String(tick.getMonth() + 1).padStart(2, "0")}</text>`;
+      tick = new Date(tick.getFullYear(), tick.getMonth() + 3, 1);
+    }
+    s += `<line x1="${M.l}" y1="${H - M.b}" x2="${W - M.r}" y2="${H - M.b}" stroke="#bdbdbd"/>`;
+    for (const p of pts) {
+      s += `<circle cx="${X(p.d)}" cy="${Y(p.v)}" r="5" fill="${p.h ? "#ff5722" : "#2962ff"}"` +
+           ` fill-opacity="0.85" stroke="#fff" stroke-width="1.5"` +
+           ` data-t="${esc(p.t)}" data-d="${p.d}" data-v="${p.v}" data-h="${p.h ? 1 : 0}"/>`;
+    }
+    el.innerHTML = s + "</svg>";
+  }
+
+  function drawAcc(i) {
+    const data = JSON.parse(document.getElementById("chart-data-" + i).textContent);
+    document.querySelectorAll(`.chart[data-acc="${i}"]`).forEach(el => {
+      const fmt = el.dataset.fmt;
+      draw(el, data.filter(p => fmt === "shorts" ? p.f === "shorts" : p.f !== "shorts"),
+           scales[i] || "lin");
+    });
+  }
+
+  document.querySelectorAll(".toggle button").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const i = btn.dataset.acc;
+      scales[i] = btn.dataset.scale;
+      btn.parentElement.querySelectorAll("button").forEach(b =>
+        b.classList.toggle("on", b === btn));
+      drawAcc(i);
+    });
+  });
+
+  document.querySelectorAll("script[id^='chart-data-']").forEach(sc =>
+    drawAcc(sc.id.replace("chart-data-", "")));
+
+  const tip = document.getElementById("chart-tip");
+  document.addEventListener("mousemove", e => {
+    const c = e.target.closest && e.target.closest(".chart circle");
+    if (c) {
+      tip.style.display = "block";
+      tip.innerHTML = (c.dataset.h === "1" ? "🔥 " : "") + esc(c.dataset.t) +
+        '<br><span class="tv">' + c.dataset.d + " · 조회수 " +
+        Number(c.dataset.v).toLocaleString() + "</span>";
+      tip.style.left = Math.min(e.clientX + 14, innerWidth - 300) + "px";
+      tip.style.top = (e.clientY + 14) + "px";
+    } else tip.style.display = "none";
+  });
+})();
 </script>
 </body>
 </html>

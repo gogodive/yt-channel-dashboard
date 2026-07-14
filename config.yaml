@@ -2,7 +2,7 @@ channels:
   - name: 고고다이브
     handle: gogodive
 
-display_limit: 120
+display_limit: 200   # 차트가 최근 2년을 커버하도록 확대
 freeze_days: 30
 
 ai_comment:

@@ -1,6 +1,6 @@
 from datetime import datetime, timezone
 
-from src.render import annotate_hot, render_html
+from src.render import annotate_hot, chart_points, render_html
 
 NOW = datetime(2026, 7, 12, 7, 0, 0, tzinfo=timezone.utc)
 
@@ -61,6 +61,38 @@ def test_render_html_smoke():
     assert "테스트 코멘트" in html
     assert "분석 기준일 2026-07-12" in html
     assert "쇼츠" in html and "롱폼" in html
+
+
+def test_chart_points_filters_and_sorts():
+    videos = [
+        video("recent", 500, ts="2026-07-01T00:00:00Z"),
+        video("old", 900, ts="2023-01-01T00:00:00Z"),      # 2년 밖 → 제외
+        video("early", 300, ts="2026-01-01T00:00:00Z"),
+    ]
+    videos.append({**video("noviews", 0, ts="2026-06-01T00:00:00Z"),
+                   "metrics": {"views": None}})            # 조회수 없음 → 제외
+    pts = chart_points(videos, NOW)
+    assert [p["d"] for p in pts] == ["2026-01-01", "2026-07-01"]
+    assert pts[0]["v"] == 300 and pts[0]["f"] == "long"
+
+
+def test_chart_points_marks_hot():
+    videos = [video(f"L{i}", 100) for i in range(5)] + [video("hot", 300)]
+    annotate_hot(videos)
+    pts = chart_points(videos, NOW)
+    assert [p["h"] for p in pts].count(True) == 1
+
+
+def test_render_html_includes_chart():
+    account = {
+        "brand": "고고다이브", "handle": "gogodive",
+        "subscribers": 1, "fetched_at": NOW.isoformat(),
+        "videos": [video(f"L{i}", 100) for i in range(5)],
+    }
+    html = render_html([account], NOW)
+    assert "조회수 추이 (최근 2년)" in html
+    assert 'id="chart-data-0"' in html
+    assert "선형 축" in html and "로그 축" in html
 
 
 def test_render_html_stale_banner():

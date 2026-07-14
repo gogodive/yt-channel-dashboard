@@ -14,6 +14,7 @@ _TEMPLATE_DIR = Path(__file__).parent
 HOT_RATIO = 2.0          # 같은 포맷(쇼츠/롱폼) 중앙값 대비 이 배수 이상이면 🔥
 HOT_RATIO_LABELED = 3.0  # 이 배수 이상이면 배수까지 표기 (🔥 4.2x)
 HOT_MIN_VIDEOS = 5       # 포맷별 조회수 있는 영상이 이보다 적으면 표시 안 함
+CHART_DAYS = 730         # 조회수 추이 차트 표시 기간 (최근 2년)
 
 
 def _fmt_num(v) -> str:
@@ -71,6 +72,23 @@ def annotate_hot(videos: list[dict]) -> list[dict]:
     return hits
 
 
+def chart_points(videos: list[dict], generated_at: datetime,
+                 days: int = CHART_DAYS) -> list[dict]:
+    """조회수 추이 산점도용 데이터 (최근 days일, 조회수 있는 영상만)."""
+    cutoff = generated_at - timedelta(days=days)
+    pts = []
+    for v in videos:
+        views = v["metrics"].get("views")
+        if not isinstance(views, int) or views <= 0:
+            continue
+        if _parse_ts(v["published_at"]) < cutoff:
+            continue
+        pts.append({"t": v.get("title", ""), "d": v["published_at"][:10],
+                    "v": views, "f": v.get("format"), "h": bool(v.get("_hot"))})
+    pts.sort(key=lambda p: p["d"])
+    return pts
+
+
 def render_html(accounts: list[dict], generated_at: datetime) -> str:
     env = Environment(
         loader=FileSystemLoader(_TEMPLATE_DIR),
@@ -94,6 +112,7 @@ def render_html(accounts: list[dict], generated_at: datetime) -> str:
         annotate_hot(videos)
         acc["_long"] = [v for v in videos if v.get("format") != "shorts"]
         acc["_shorts"] = [v for v in videos if v.get("format") == "shorts"]
+        acc["_chart"] = chart_points(videos, generated_at)
     return tpl.render(
         accounts=accounts,
         generated_label=generated_at.astimezone(KST).strftime("%Y-%m-%d %H:%M"),
