@@ -26,6 +26,7 @@
   .ai { background:#fff; border:1px solid var(--line); border-left:4px solid #7c4dff;
         border-radius:8px; padding:14px 16px; margin:16px 0; }
   .ai .ai-title { font-weight:600; font-size:14px; margin-bottom:8px; }
+  .ai .ai-date { color:var(--sub); font-weight:400; font-size:12px; margin-left:8px; }
   .ai .ai-body { font-size:13px; line-height:1.7; white-space:pre-line; }
   .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
   .grid.shorts { grid-template-columns:repeat(5,1fr); }
@@ -79,8 +80,10 @@
     {% endif %}
     {% if acc._ai_comment %}
     <div class="ai">
-      <div class="ai-title">🤖 AI 썸네일 분석 (히트 영상 기준)</div>
-      <div class="ai-body">{{ acc._ai_comment }}</div>
+      <div class="ai-title">🤖 AI 썸네일 분석 (히트 영상 기준)
+        {% if acc._ai_comment.generated_at %}<span class="ai-date">분석 기준일 {{ acc._ai_comment.generated_at | date }}</span>{% endif %}
+      </div>
+      <div class="ai-body">{{ acc._ai_comment.comment }}</div>
     </div>
     {% endif %}
 

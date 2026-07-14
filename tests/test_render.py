@@ -50,7 +50,8 @@ def test_render_html_smoke():
         "fetched_at": NOW.isoformat(),
         "videos": [video(f"L{i}", 100) for i in range(5)]
         + [video("hot1", 300), video("S1", 50, fmt="shorts")],
-        "_ai_comment": "[히트 썸네일 공통 패턴] 테스트 코멘트",
+        "_ai_comment": {"comment": "[히트 썸네일 공통 패턴] 테스트 코멘트",
+                        "generated_at": "2026-07-12T07:00:00+09:00"},
     }
     html = render_html([account], NOW)
     assert "고고다이브" in html
@@ -58,6 +59,7 @@ def test_render_html_smoke():
     assert "🔥 3.0x" in html
     assert "AI 썸네일 분석" in html
     assert "테스트 코멘트" in html
+    assert "분석 기준일 2026-07-12" in html
     assert "쇼츠" in html and "롱폼" in html
 
 
