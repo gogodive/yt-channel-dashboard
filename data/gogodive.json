@@ -3,7 +3,7 @@
   "handle": "gogodive",
   "channel_title": "고고다이브",
   "subscribers": 11700,
-  "fetched_at": "2026-07-14T09:25:50.369307+09:00",
+  "fetched_at": "2026-07-14T13:07:37.190393+09:00",
   "videos": [
     {
       "video_id": "XJ3slW6Ssig",
@@ -19,7 +19,7 @@
         "likes": 5,
         "comments": 2
       },
-      "metrics_updated_at": "2026-07-14T09:25:50.369307+09:00"
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
     },
     {
       "video_id": "8gfjsO-k6bc",
@@ -35,7 +35,7 @@
         "likes": 4,
         "comments": 0
       },
-      "metrics_updated_at": "2026-07-14T09:25:50.369307+09:00"
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
     },
     {
       "video_id": "o_cUydxMPiU",
@@ -47,11 +47,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 912,
+        "views": 913,
         "likes": 14,
         "comments": 2
       },
-      "metrics_updated_at": "2026-07-14T09:25:50.369307+09:00"
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
     },
     {
       "video_id": "Im3Yg-p8ta0",
@@ -67,7 +67,7 @@
         "likes": 7,
         "comments": 0
       },
-      "metrics_updated_at": "2026-07-14T09:25:50.369307+09:00"
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
     },
     {
       "video_id": "GfRZCQKn2w8",
@@ -83,7 +83,7 @@
         "likes": 13,
         "comments": 0
       },
-      "metrics_updated_at": "2026-07-14T09:25:50.369307+09:00"
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
     },
     {
       "video_id": "9-py_eQFaYw",
@@ -99,7 +99,7 @@
         "likes": 5,
         "comments": 0
       },
-      "metrics_updated_at": "2026-07-14T09:25:50.369307+09:00"
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
     },
     {
       "video_id": "vGVR9Vig8g8",
@@ -115,7 +115,7 @@
         "likes": 7,
         "comments": 0
       },
-      "metrics_updated_at": "2026-07-14T09:25:50.369307+09:00"
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
     },
     {
       "video_id": "o6192wgkzpU",
@@ -131,7 +131,7 @@
         "likes": 5,
         "comments": 0
       },
-      "metrics_updated_at": "2026-07-14T09:25:50.369307+09:00"
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
     },
     {
       "video_id": "3yO24sTyqx0",
@@ -1924,6 +1924,1286 @@
         "comments": 0
       },
       "metrics_updated_at": "2026-07-12T14:20:48.805804+09:00"
+    },
+    {
+      "video_id": "jCFwhnQl4FU",
+      "title": "고고다이브 대학생 서포터즈 모집",
+      "url": "https://www.youtube.com/watch?v=jCFwhnQl4FU",
+      "thumbnail": "https://i.ytimg.com/vi/jCFwhnQl4FU/hqdefault.jpg",
+      "published_at": "2025-01-14T07:45:02Z",
+      "duration": 18,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 402,
+        "likes": 3,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "dNuCmBSvqwk",
+      "title": "다이버가 수영장에서 노는 법 #프리다이빙",
+      "url": "https://www.youtube.com/watch?v=dNuCmBSvqwk",
+      "thumbnail": "https://i.ytimg.com/vi/dNuCmBSvqwk/hqdefault.jpg",
+      "published_at": "2025-01-10T10:30:18Z",
+      "duration": 7,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 5313,
+        "likes": 16,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "HiYEzPGksNw",
+      "title": "스쿠버다이빙 호흡기 장비 구매법🫧 1단계? 2단계? 딘? 요크? 헷갈리는 용어 총정리",
+      "url": "https://www.youtube.com/watch?v=HiYEzPGksNw",
+      "thumbnail": "https://i.ytimg.com/vi/HiYEzPGksNw/hqdefault.jpg",
+      "published_at": "2025-01-09T09:00:19Z",
+      "duration": 675,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 9659,
+        "likes": 90,
+        "comments": 5
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "2lN8UXN0UAU",
+      "title": "다이버들 6명이 한 번에 헤엄치는 법",
+      "url": "https://www.youtube.com/watch?v=2lN8UXN0UAU",
+      "thumbnail": "https://i.ytimg.com/vi/2lN8UXN0UAU/hqdefault.jpg",
+      "published_at": "2025-01-08T09:00:05Z",
+      "duration": 9,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 12839,
+        "likes": 10,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "HkaxlNc1eYE",
+      "title": "프리다이버로 변신!",
+      "url": "https://www.youtube.com/watch?v=HkaxlNc1eYE",
+      "thumbnail": "https://i.ytimg.com/vi/HkaxlNc1eYE/hqdefault.jpg",
+      "published_at": "2025-01-03T01:00:14Z",
+      "duration": 9,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 3750,
+        "likes": 20,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "g-IqGWI6OvU",
+      "title": "스쿠버다이빙 BCD🤿 백플레이트? 윙? D링? 자켓형? 어려운 궁금증 총정리",
+      "url": "https://www.youtube.com/watch?v=g-IqGWI6OvU",
+      "thumbnail": "https://i.ytimg.com/vi/g-IqGWI6OvU/hqdefault.jpg",
+      "published_at": "2025-01-02T09:00:43Z",
+      "duration": 736,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 11548,
+        "likes": 85,
+        "comments": 6
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "Q8JoJ5D0jHY",
+      "title": "프리다이빙 VS 스쿠버다이빙 뭐가 달라요?🫧",
+      "url": "https://www.youtube.com/watch?v=Q8JoJ5D0jHY",
+      "thumbnail": "https://i.ytimg.com/vi/Q8JoJ5D0jHY/hqdefault.jpg",
+      "published_at": "2025-01-01T00:00:28Z",
+      "duration": 60,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 71585,
+        "likes": 385,
+        "comments": 30
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "UDuRYahmvek",
+      "title": "2025 내가 갈 다이빙 스팟은?🤿",
+      "url": "https://www.youtube.com/watch?v=UDuRYahmvek",
+      "thumbnail": "https://i.ytimg.com/vi/UDuRYahmvek/hqdefault.jpg",
+      "published_at": "2024-12-31T03:00:24Z",
+      "duration": 13,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 431,
+        "likes": 6,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "D3XdOVbGcCs",
+      "title": "어려운 스쿠버 장비 1분 만에 체결하는법",
+      "url": "https://www.youtube.com/watch?v=D3XdOVbGcCs",
+      "thumbnail": "https://i.ytimg.com/vi/D3XdOVbGcCs/hqdefault.jpg",
+      "published_at": "2024-12-28T00:30:06Z",
+      "duration": 55,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 12415,
+        "likes": 98,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "OU0yo7m_8wc",
+      "title": "고고다이브는 항상 달린다💨",
+      "url": "https://www.youtube.com/watch?v=OU0yo7m_8wc",
+      "thumbnail": "https://i.ytimg.com/vi/OU0yo7m_8wc/hqdefault.jpg",
+      "published_at": "2024-12-27T07:30:05Z",
+      "duration": 12,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 1067,
+        "likes": 7,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "rE2ws1f_gfU",
+      "title": "스쿠버 장비 조립 5분 만에 끝내는 법",
+      "url": "https://www.youtube.com/watch?v=rE2ws1f_gfU",
+      "thumbnail": "https://i.ytimg.com/vi/rE2ws1f_gfU/hqdefault.jpg",
+      "published_at": "2024-12-26T09:00:54Z",
+      "duration": 625,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 30570,
+        "likes": 584,
+        "comments": 33
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "Ymb0lmkhgC0",
+      "title": "프리다이버 단계별 특징😂",
+      "url": "https://www.youtube.com/watch?v=Ymb0lmkhgC0",
+      "thumbnail": "https://i.ytimg.com/vi/Ymb0lmkhgC0/hqdefault.jpg",
+      "published_at": "2024-12-26T06:29:14Z",
+      "duration": 36,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 116130,
+        "likes": 580,
+        "comments": 56
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "oohSA8oUPw4",
+      "title": "수중 운동회 연말파티 100명의 다이버가 모였다❤️ 직장인 취미 강추",
+      "url": "https://www.youtube.com/watch?v=oohSA8oUPw4",
+      "thumbnail": "https://i.ytimg.com/vi/oohSA8oUPw4/hqdefault.jpg",
+      "published_at": "2024-12-19T09:00:51Z",
+      "duration": 181,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 865,
+        "likes": 15,
+        "comments": 3
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "yiKlEsLv2pQ",
+      "title": "당신의 다이빙 레벨은 무엇인가요?😎",
+      "url": "https://www.youtube.com/watch?v=yiKlEsLv2pQ",
+      "thumbnail": "https://i.ytimg.com/vi/yiKlEsLv2pQ/hqdefault.jpg",
+      "published_at": "2024-12-18T08:37:05Z",
+      "duration": 19,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 18483,
+        "likes": 211,
+        "comments": 1
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "uVnG0HK7qZ0",
+      "title": "프리다이버는 물 밖에서 뭐하고 놀까요?",
+      "url": "https://www.youtube.com/watch?v=uVnG0HK7qZ0",
+      "thumbnail": "https://i.ytimg.com/vi/uVnG0HK7qZ0/hqdefault.jpg",
+      "published_at": "2024-12-16T08:21:25Z",
+      "duration": 9,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 1360,
+        "likes": 11,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "16kqYk6FvOM",
+      "title": "프리다이빙 vs 스쿠버다이빙 차이점🤿 여행 가기 더 좋은 자격증은?",
+      "url": "https://www.youtube.com/watch?v=16kqYk6FvOM",
+      "thumbnail": "https://i.ytimg.com/vi/16kqYk6FvOM/hqdefault.jpg",
+      "published_at": "2024-12-12T09:00:02Z",
+      "duration": 311,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 8922,
+        "likes": 73,
+        "comments": 1
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "uwM0fPv4L2g",
+      "title": "고고 송년회 협찬품 리스트❤️",
+      "url": "https://www.youtube.com/watch?v=uwM0fPv4L2g",
+      "thumbnail": "https://i.ytimg.com/vi/uwM0fPv4L2g/hqdefault.jpg",
+      "published_at": "2024-12-09T02:47:42Z",
+      "duration": 12,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 592,
+        "likes": 6,
+        "comments": 3
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "eqz-c-NFGDU",
+      "title": "다이빙컴퓨터 추천⌚ 애플워치? 순토? 가민? 가성비별 총정리",
+      "url": "https://www.youtube.com/watch?v=eqz-c-NFGDU",
+      "thumbnail": "https://i.ytimg.com/vi/eqz-c-NFGDU/hqdefault.jpg",
+      "published_at": "2024-12-05T09:00:42Z",
+      "duration": 800,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 32707,
+        "likes": 199,
+        "comments": null
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "WXfppEv4RZs",
+      "title": "숱 많고 층 많은 머리, 다이빙 헤어스타일링 필요해요!",
+      "url": "https://www.youtube.com/watch?v=WXfppEv4RZs",
+      "thumbnail": "https://i.ytimg.com/vi/WXfppEv4RZs/hqdefault.jpg",
+      "published_at": "2024-12-03T09:00:28Z",
+      "duration": 54,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 1173,
+        "likes": 8,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "prxvxGUuRqI",
+      "title": "리브어보드 다이빙 준비물 가격 여행지 자격증의 모든 것🛳️",
+      "url": "https://www.youtube.com/watch?v=prxvxGUuRqI",
+      "thumbnail": "https://i.ytimg.com/vi/prxvxGUuRqI/hqdefault.jpg",
+      "published_at": "2024-11-28T09:00:51Z",
+      "duration": 736,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 8767,
+        "likes": 98,
+        "comments": 9
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "HjljLJJotcs",
+      "title": "스쿠버다이빙 자격증 가격 가장 저렴하게 따는 법🫧 프리다이버 무조건 클릭!",
+      "url": "https://www.youtube.com/watch?v=HjljLJJotcs",
+      "thumbnail": "https://i.ytimg.com/vi/HjljLJJotcs/hqdefault.jpg",
+      "published_at": "2024-11-21T09:00:24Z",
+      "duration": 674,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 2962,
+        "likes": 27,
+        "comments": 3
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "Yv5LFczWCNc",
+      "title": "보홀 프리다이빙 체험💙 나팔링 발리카삭 고래상어 가격 및 꿀팁 대공개",
+      "url": "https://www.youtube.com/watch?v=Yv5LFczWCNc",
+      "thumbnail": "https://i.ytimg.com/vi/Yv5LFczWCNc/hqdefault.jpg",
+      "published_at": "2024-11-14T09:00:35Z",
+      "duration": 746,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 10930,
+        "likes": 70,
+        "comments": 23
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "XuJY1O9zzPI",
+      "title": "프리다이빙 자격증 비용 얼마 드나요? 오해와 진실들",
+      "url": "https://www.youtube.com/watch?v=XuJY1O9zzPI",
+      "thumbnail": "https://i.ytimg.com/vi/XuJY1O9zzPI/hqdefault.jpg",
+      "published_at": "2024-11-07T09:00:37Z",
+      "duration": 432,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 5756,
+        "likes": 32,
+        "comments": null
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "cylbvfJnQR4",
+      "title": "프리다이빙 수심 대회 아이다 AIDA 화이트카드 받을 수 있을까?",
+      "url": "https://www.youtube.com/watch?v=cylbvfJnQR4",
+      "thumbnail": "https://i.ytimg.com/vi/cylbvfJnQR4/hqdefault.jpg",
+      "published_at": "2024-10-31T09:00:39Z",
+      "duration": 1004,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 2233,
+        "likes": 23,
+        "comments": 3
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "fKbqFPlDtwA",
+      "title": "프리다이빙 국가대표 추천 핀, 슈트, 플루이드 고글 & 수심 꿀팁 알려드립니다!",
+      "url": "https://www.youtube.com/watch?v=fKbqFPlDtwA",
+      "thumbnail": "https://i.ytimg.com/vi/fKbqFPlDtwA/hqdefault.jpg",
+      "published_at": "2024-10-24T09:00:41Z",
+      "duration": 775,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 1535,
+        "likes": 31,
+        "comments": 11
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "ctoZagJlu1I",
+      "title": "프리다이빙 국가대표의 이퀄라이징, 스태틱, 마우스필 실전 꿀팁 대방출",
+      "url": "https://www.youtube.com/watch?v=ctoZagJlu1I",
+      "thumbnail": "https://i.ytimg.com/vi/ctoZagJlu1I/hqdefault.jpg",
+      "published_at": "2024-10-17T09:00:38Z",
+      "duration": 764,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 4719,
+        "likes": 55,
+        "comments": 13
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "6duvzf0jEnI",
+      "title": "프리다이빙 선수가 대회 때 가져가는 장비는? 왓츠 인 마이 다이빙백👜",
+      "url": "https://www.youtube.com/watch?v=6duvzf0jEnI",
+      "thumbnail": "https://i.ytimg.com/vi/6duvzf0jEnI/hqdefault.jpg",
+      "published_at": "2024-10-10T09:00:08Z",
+      "duration": 380,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 1638,
+        "likes": 18,
+        "comments": 7
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "lAc6GZXrl-k",
+      "title": "아바타 물의길, 근데 이제 다이빙을 곁들인",
+      "url": "https://www.youtube.com/watch?v=lAc6GZXrl-k",
+      "thumbnail": "https://i.ytimg.com/vi/lAc6GZXrl-k/hqdefault.jpg",
+      "published_at": "2024-10-08T08:00:34Z",
+      "duration": 17,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 936,
+        "likes": 13,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "eNzaD118XZ4",
+      "title": "그 날에 다이빙 가도 되나요? 브라질리언 제모는? 여성 다이버 위한 꿀팁 대방출",
+      "url": "https://www.youtube.com/watch?v=eNzaD118XZ4",
+      "thumbnail": "https://i.ytimg.com/vi/eNzaD118XZ4/hqdefault.jpg",
+      "published_at": "2024-10-03T09:00:40Z",
+      "duration": 471,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 1918,
+        "likes": 29,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "kmbUuU4I0ys",
+      "title": "다이빙 강사 비용, 수입, 전망🤿 부업으로 할수있는일 N잡 끝판왕",
+      "url": "https://www.youtube.com/watch?v=kmbUuU4I0ys",
+      "thumbnail": "https://i.ytimg.com/vi/kmbUuU4I0ys/hqdefault.jpg",
+      "published_at": "2024-09-26T09:00:50Z",
+      "duration": 636,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 8801,
+        "likes": 69,
+        "comments": 19
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "2AyaBzqD86U",
+      "title": "파라다이브 가기 전 필수 시청💣 가격 수심 꿀팁 총정리",
+      "url": "https://www.youtube.com/watch?v=2AyaBzqD86U",
+      "thumbnail": "https://i.ytimg.com/vi/2AyaBzqD86U/hqdefault.jpg",
+      "published_at": "2024-09-20T02:00:01Z",
+      "duration": 250,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 6071,
+        "likes": 34,
+        "comments": 3
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "5PtTO2tdCs8",
+      "title": "다이빙 헤어스타일링 팁💫 단발, 긴 머리, 남자 헤어까지! 추노 되지 마세요",
+      "url": "https://www.youtube.com/watch?v=5PtTO2tdCs8",
+      "thumbnail": "https://i.ytimg.com/vi/5PtTO2tdCs8/hqdefault.jpg",
+      "published_at": "2024-09-12T09:00:05Z",
+      "duration": 448,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 8506,
+        "likes": 74,
+        "comments": 10
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "sj7oU1-mNQs",
+      "title": "프리다이빙 인생샷 성지💫 파라다이브 노수모데이 다녀왔습니다!",
+      "url": "https://www.youtube.com/watch?v=sj7oU1-mNQs",
+      "thumbnail": "https://i.ytimg.com/vi/sj7oU1-mNQs/hqdefault.jpg",
+      "published_at": "2024-09-05T09:00:54Z",
+      "duration": 304,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 1871,
+        "likes": 22,
+        "comments": 5
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "CtixHBfM9-Y",
+      "title": "이퀄라이징 완성하는 세 가지 방법  #프리다이빙",
+      "url": "https://www.youtube.com/watch?v=CtixHBfM9-Y",
+      "thumbnail": "https://i.ytimg.com/vi/CtixHBfM9-Y/hqdefault.jpg",
+      "published_at": "2024-09-02T08:00:05Z",
+      "duration": 58,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 96451,
+        "likes": 682,
+        "comments": 80
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "8bkwnUUxr00",
+      "title": "프렌젤 이퀄라이징 셀프 체크 하는법🫧 연습 꿀팁까지 총정리",
+      "url": "https://www.youtube.com/watch?v=8bkwnUUxr00",
+      "thumbnail": "https://i.ytimg.com/vi/8bkwnUUxr00/hqdefault.jpg",
+      "published_at": "2024-08-29T09:00:06Z",
+      "duration": 800,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 9716,
+        "likes": 153,
+        "comments": 16
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "vnhyANojT1I",
+      "title": "프리다이빙 자격증 딸까? 말까? 고민 중이라면 필독!│고고다이브 대학생 서포터즈",
+      "url": "https://www.youtube.com/watch?v=vnhyANojT1I",
+      "thumbnail": "https://i.ytimg.com/vi/vnhyANojT1I/hqdefault.jpg",
+      "published_at": "2024-08-22T09:01:01Z",
+      "duration": 417,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 1897,
+        "likes": 28,
+        "comments": 2
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "1StJrG-ID9w",
+      "title": "프리다이빙 자격증 따고 싶다고? 연습반 비밀 루틴 대공개",
+      "url": "https://www.youtube.com/watch?v=1StJrG-ID9w",
+      "thumbnail": "https://i.ytimg.com/vi/1StJrG-ID9w/hqdefault.jpg",
+      "published_at": "2024-08-15T09:00:01Z",
+      "duration": 577,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 17536,
+        "likes": 143,
+        "comments": 19
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "Tvj9eviMo6I",
+      "title": "프리다이빙하다 설레본 적 다들 있잖아?❤️",
+      "url": "https://www.youtube.com/watch?v=Tvj9eviMo6I",
+      "thumbnail": "https://i.ytimg.com/vi/Tvj9eviMo6I/hqdefault.jpg",
+      "published_at": "2024-08-12T09:15:02Z",
+      "duration": 11,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 7403,
+        "likes": 38,
+        "comments": 1
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "zQooHvEViqc",
+      "title": "프리다이빙 중급(레벨3) 자격증 왜 따야 하냐고요? 시험 브이로그",
+      "url": "https://www.youtube.com/watch?v=zQooHvEViqc",
+      "thumbnail": "https://i.ytimg.com/vi/zQooHvEViqc/hqdefault.jpg",
+      "published_at": "2024-08-08T09:06:23Z",
+      "duration": 507,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 30161,
+        "likes": 212,
+        "comments": 21
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "JImX3U0RSdc",
+      "title": "보홀 발리카삭 다이빙 거북이 100마리 보는 브이로그🐢l 다이빙샵 자격증 가격",
+      "url": "https://www.youtube.com/watch?v=JImX3U0RSdc",
+      "thumbnail": "https://i.ytimg.com/vi/JImX3U0RSdc/hqdefault.jpg",
+      "published_at": "2024-08-01T09:00:14Z",
+      "duration": 607,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 2642,
+        "likes": 28,
+        "comments": 7
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "oqwhqhKzafw",
+      "title": "보홀 프리다이빙 나팔링 투어🤿 0부터 제대로 알려드리는 브이로그 l 가격 자격증 체험 포인트",
+      "url": "https://www.youtube.com/watch?v=oqwhqhKzafw",
+      "thumbnail": "https://i.ytimg.com/vi/oqwhqhKzafw/hqdefault.jpg",
+      "published_at": "2024-07-25T09:00:37Z",
+      "duration": 593,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 21587,
+        "likes": 106,
+        "comments": 17
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "dKXqBCxry0M",
+      "title": "실전 물 속에서 심쿵 유발하는법 #버블하트",
+      "url": "https://www.youtube.com/watch?v=dKXqBCxry0M",
+      "thumbnail": "https://i.ytimg.com/vi/dKXqBCxry0M/hqdefault.jpg",
+      "published_at": "2024-07-22T02:30:25Z",
+      "duration": 29,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 10414,
+        "likes": 47,
+        "comments": 3
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "G4fTd5MVUX8",
+      "title": "물놀이 스킬 버블장풍 알려드립니다",
+      "url": "https://www.youtube.com/watch?v=G4fTd5MVUX8",
+      "thumbnail": "https://i.ytimg.com/vi/G4fTd5MVUX8/hqdefault.jpg",
+      "published_at": "2024-07-19T01:45:00Z",
+      "duration": 47,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 21539,
+        "likes": 156,
+        "comments": 1
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "fQlmc2P5xCg",
+      "title": "물놀이 가기 전 필수 저장 #도넛 버블링 만드는법",
+      "url": "https://www.youtube.com/watch?v=fQlmc2P5xCg",
+      "thumbnail": "https://i.ytimg.com/vi/fQlmc2P5xCg/hqdefault.jpg",
+      "published_at": "2024-07-18T09:30:13Z",
+      "duration": 46,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 63261,
+        "likes": 440,
+        "comments": 9
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "cNhW2vDMVSU",
+      "title": "물놀이 버블링 장풍 하트 도넛 만드는 법🫧 수영 못해도 핵인싸 되기",
+      "url": "https://www.youtube.com/watch?v=cNhW2vDMVSU",
+      "thumbnail": "https://i.ytimg.com/vi/cNhW2vDMVSU/hqdefault.jpg",
+      "published_at": "2024-07-18T09:00:27Z",
+      "duration": 481,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 8158,
+        "likes": 137,
+        "comments": 27
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "yUPfI2-XmeI",
+      "title": "#프리다이버 의 플러팅",
+      "url": "https://www.youtube.com/watch?v=yUPfI2-XmeI",
+      "thumbnail": "https://i.ytimg.com/vi/yUPfI2-XmeI/hqdefault.jpg",
+      "published_at": "2024-07-11T10:00:57Z",
+      "duration": 11,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 985,
+        "likes": 14,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "dWWZ_LjXRlM",
+      "title": "프리다이빙 투어 간다면 주목! 다이빙 준비물 캐리어 챙기는 법",
+      "url": "https://www.youtube.com/watch?v=dWWZ_LjXRlM",
+      "thumbnail": "https://i.ytimg.com/vi/dWWZ_LjXRlM/hqdefault.jpg",
+      "published_at": "2024-07-11T09:00:34Z",
+      "duration": 497,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 8861,
+        "likes": 58,
+        "comments": 18
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "SZ0xIWuLVgo",
+      "title": "#수퍼노바 기차 탑승 프리다이버들",
+      "url": "https://www.youtube.com/watch?v=SZ0xIWuLVgo",
+      "thumbnail": "https://i.ytimg.com/vi/SZ0xIWuLVgo/hqdefault.jpg",
+      "published_at": "2024-07-10T09:00:31Z",
+      "duration": 12,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 1923,
+        "likes": 12,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "L0YgbzFu8kQ",
+      "title": "#프리다이버 들의 티라미수 케익🍰",
+      "url": "https://www.youtube.com/watch?v=L0YgbzFu8kQ",
+      "thumbnail": "https://i.ytimg.com/vi/L0YgbzFu8kQ/hqdefault.jpg",
+      "published_at": "2024-07-09T10:00:19Z",
+      "duration": 10,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 4125,
+        "likes": 46,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "IEGJGsaW-M0",
+      "title": "프리다이빙 장비 추천 예비 국가대표가 말아드립니다🩷 내돈내산 슈트 핀 오리발 총집합",
+      "url": "https://www.youtube.com/watch?v=IEGJGsaW-M0",
+      "thumbnail": "https://i.ytimg.com/vi/IEGJGsaW-M0/hqdefault.jpg",
+      "published_at": "2024-07-04T09:00:13Z",
+      "duration": 1101,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 25014,
+        "likes": 196,
+        "comments": 18
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "4EDWEsfcE2s",
+      "title": "지금 내가 뭘 본거지? #나이트다이빙",
+      "url": "https://www.youtube.com/watch?v=4EDWEsfcE2s",
+      "thumbnail": "https://i.ytimg.com/vi/4EDWEsfcE2s/hqdefault.jpg",
+      "published_at": "2024-07-02T08:30:02Z",
+      "duration": 9,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 1161,
+        "likes": 4,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "VtVbkrowzsg",
+      "title": "프리다이빙 호흡법 숨 오래 참는 스태틱 꿀팁💙 대회, 수심 트레이닝 총정리",
+      "url": "https://www.youtube.com/watch?v=VtVbkrowzsg",
+      "thumbnail": "https://i.ytimg.com/vi/VtVbkrowzsg/hqdefault.jpg",
+      "published_at": "2024-06-27T09:58:37Z",
+      "duration": 1086,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 25221,
+        "likes": 233,
+        "comments": 23
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "u5BNXi4DRZo",
+      "title": "다이빙 강사 하고싶다고😎 프린이에서 강사까지 비용 수입 꿀팁 다 알려드립니다",
+      "url": "https://www.youtube.com/watch?v=u5BNXi4DRZo",
+      "thumbnail": "https://i.ytimg.com/vi/u5BNXi4DRZo/hqdefault.jpg",
+      "published_at": "2024-06-20T09:00:53Z",
+      "duration": 517,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 6405,
+        "likes": 76,
+        "comments": 11
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "BOTW9K_o6bE",
+      "title": "손쉽게 무중력상태 느끼는 법 #스쿠버다이빙",
+      "url": "https://www.youtube.com/watch?v=BOTW9K_o6bE",
+      "thumbnail": "https://i.ytimg.com/vi/BOTW9K_o6bE/hqdefault.jpg",
+      "published_at": "2024-06-16T06:00:04Z",
+      "duration": 12,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 2660,
+        "likes": 13,
+        "comments": 2
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "nddMYgBkVjY",
+      "title": "#다이빙 해야하는 이유",
+      "url": "https://www.youtube.com/watch?v=nddMYgBkVjY",
+      "thumbnail": "https://i.ytimg.com/vi/nddMYgBkVjY/hqdefault.jpg",
+      "published_at": "2024-06-14T10:00:57Z",
+      "duration": 13,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 905,
+        "likes": 16,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "BxZtMURYE0A",
+      "title": "프리다이버만 할 수 있는 봉사활동 플로빙🐳 삼척 갈남항 브이로그",
+      "url": "https://www.youtube.com/watch?v=BxZtMURYE0A",
+      "thumbnail": "https://i.ytimg.com/vi/BxZtMURYE0A/hqdefault.jpg",
+      "published_at": "2024-06-13T09:00:09Z",
+      "duration": 545,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 1966,
+        "likes": 60,
+        "comments": 14
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "cO5_-DN6mrU",
+      "title": "딥스테이션 프리다이빙 스쿠버다이빙 가기 전 필독🤿 깔끔 리뷰",
+      "url": "https://www.youtube.com/watch?v=cO5_-DN6mrU",
+      "thumbnail": "https://i.ytimg.com/vi/cO5_-DN6mrU/hqdefault.jpg",
+      "published_at": "2024-06-06T09:00:27Z",
+      "duration": 246,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 7609,
+        "likes": 55,
+        "comments": 1
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "fj920mO2w2w",
+      "title": "36m 바닥 찍고 오기 #딥스테이션",
+      "url": "https://www.youtube.com/watch?v=fj920mO2w2w",
+      "thumbnail": "https://i.ytimg.com/vi/fj920mO2w2w/hqdefault.jpg",
+      "published_at": "2024-06-04T10:00:29Z",
+      "duration": 23,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 3322,
+        "likes": 19,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "uKPip6x7530",
+      "title": "진지하게 하는 중입니다 #머메이드다이빙",
+      "url": "https://www.youtube.com/watch?v=uKPip6x7530",
+      "thumbnail": "https://i.ytimg.com/vi/uKPip6x7530/hqdefault.jpg",
+      "published_at": "2024-06-01T01:00:33Z",
+      "duration": 19,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 2337,
+        "likes": 25,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "lt8PSIjai0k",
+      "title": "망가진 인어 #머메이드다이빙",
+      "url": "https://www.youtube.com/watch?v=lt8PSIjai0k",
+      "thumbnail": "https://i.ytimg.com/vi/lt8PSIjai0k/hqdefault.jpg",
+      "published_at": "2024-05-31T09:00:47Z",
+      "duration": 17,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 8643,
+        "likes": 32,
+        "comments": 2
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "hAWPjmtMrm8",
+      "title": "인어처럼🧜 머메이드 다이빙을 아시나요?",
+      "url": "https://www.youtube.com/watch?v=hAWPjmtMrm8",
+      "thumbnail": "https://i.ytimg.com/vi/hAWPjmtMrm8/hqdefault.jpg",
+      "published_at": "2024-05-30T11:00:37Z",
+      "duration": 17,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 7599,
+        "likes": 35,
+        "comments": 6
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "qRrA8YSXDMc",
+      "title": "머메이드다이빙 들어보셨나요🧜 직장인 취미 추천 VLOG (웃참챌린지)",
+      "url": "https://www.youtube.com/watch?v=qRrA8YSXDMc",
+      "thumbnail": "https://i.ytimg.com/vi/qRrA8YSXDMc/hqdefault.jpg",
+      "published_at": "2024-05-30T09:00:43Z",
+      "duration": 631,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 4655,
+        "likes": 95,
+        "comments": 48
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "FdegjuGcacQ",
+      "title": "프리다이빙 한다면 꼭 가야하는 곳 #로타",
+      "url": "https://www.youtube.com/watch?v=FdegjuGcacQ",
+      "thumbnail": "https://i.ytimg.com/vi/FdegjuGcacQ/hqdefault.jpg",
+      "published_at": "2024-05-30T06:20:55Z",
+      "duration": 9,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 2523,
+        "likes": 40,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "XOd666cXDuU",
+      "title": "상어가 내 머리에 있는 경험🦈",
+      "url": "https://www.youtube.com/watch?v=XOd666cXDuU",
+      "thumbnail": "https://i.ytimg.com/vi/XOd666cXDuU/hqdefault.jpg",
+      "published_at": "2024-05-24T09:00:28Z",
+      "duration": 9,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 701,
+        "likes": 10,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "NA9IDn5JGm8",
+      "title": "프리 스쿠버 다이버들 모두 모였다🤿 명불허전 제 1회 수중 운동회",
+      "url": "https://www.youtube.com/watch?v=NA9IDn5JGm8",
+      "thumbnail": "https://i.ytimg.com/vi/NA9IDn5JGm8/hqdefault.jpg",
+      "published_at": "2024-05-23T09:00:23Z",
+      "duration": 464,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 3795,
+        "likes": 53,
+        "comments": 5
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "M8tJbIkWSoc",
+      "title": "바다에 산타가 나타났다고?🧑‍🎄",
+      "url": "https://www.youtube.com/watch?v=M8tJbIkWSoc",
+      "thumbnail": "https://i.ytimg.com/vi/M8tJbIkWSoc/hqdefault.jpg",
+      "published_at": "2024-05-21T02:58:29Z",
+      "duration": 15,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 1217,
+        "likes": 3,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "NdrnJOM5R6I",
+      "title": "죽기전에 꼭 가봐야할 다이빙 성지 TOP5🦈 여행지 포인트 다 알려 드립니다",
+      "url": "https://www.youtube.com/watch?v=NdrnJOM5R6I",
+      "thumbnail": "https://i.ytimg.com/vi/NdrnJOM5R6I/hqdefault.jpg",
+      "published_at": "2024-05-16T09:00:18Z",
+      "duration": 915,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 11815,
+        "likes": 132,
+        "comments": 18
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "u4wt3RB-ub0",
+      "title": "프리다이빙 연습반 뭘 해야 하나요?😂 + 종합운동장 잠수풀 리뷰",
+      "url": "https://www.youtube.com/watch?v=u4wt3RB-ub0",
+      "thumbnail": "https://i.ytimg.com/vi/u4wt3RB-ub0/hqdefault.jpg",
+      "published_at": "2024-05-09T09:00:43Z",
+      "duration": 342,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 9643,
+        "likes": 75,
+        "comments": 2
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "eWmdp0dQ4KE",
+      "title": "나 바다에서 인어공주 봤어!",
+      "url": "https://www.youtube.com/watch?v=eWmdp0dQ4KE",
+      "thumbnail": "https://i.ytimg.com/vi/eWmdp0dQ4KE/hqdefault.jpg",
+      "published_at": "2024-05-07T09:30:11Z",
+      "duration": 14,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 4094,
+        "likes": 28,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "RJv7ttMlBMU",
+      "title": "프리다이버 70명의 단체 댄스",
+      "url": "https://www.youtube.com/watch?v=RJv7ttMlBMU",
+      "thumbnail": "https://i.ytimg.com/vi/RJv7ttMlBMU/hqdefault.jpg",
+      "published_at": "2024-05-02T12:00:31Z",
+      "duration": 14,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 9311,
+        "likes": 37,
+        "comments": 1
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "K1tEuRTdKSQ",
+      "title": "해외 다이빙 갈 때 짐 싸기 체크리스트✔️ 롱핀은 어떻게 하나요?",
+      "url": "https://www.youtube.com/watch?v=K1tEuRTdKSQ",
+      "thumbnail": "https://i.ytimg.com/vi/K1tEuRTdKSQ/hqdefault.jpg",
+      "published_at": "2024-05-02T09:00:13Z",
+      "duration": 899,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 5680,
+        "likes": 60,
+        "comments": 11
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "0_TCJdM4Wvk",
+      "title": "물고기와 교감하는법  #스쿠버다이빙",
+      "url": "https://www.youtube.com/watch?v=0_TCJdM4Wvk",
+      "thumbnail": "https://i.ytimg.com/vi/0_TCJdM4Wvk/hqdefault.jpg",
+      "published_at": "2024-04-25T23:00:00Z",
+      "duration": 10,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 9943,
+        "likes": 70,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "g4T2kTI96_Q",
+      "title": "오산 테마 TSN 잠수풀🫧 수심 수온 비용 시간 총정리",
+      "url": "https://www.youtube.com/watch?v=g4T2kTI96_Q",
+      "thumbnail": "https://i.ytimg.com/vi/g4T2kTI96_Q/hqdefault.jpg",
+      "published_at": "2024-04-25T09:00:34Z",
+      "duration": 216,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 3655,
+        "likes": 17,
+        "comments": 9
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "GpwA1TweohQ",
+      "title": "물 속에서 인싸되는 비결 #스쿠버다이빙",
+      "url": "https://www.youtube.com/watch?v=GpwA1TweohQ",
+      "thumbnail": "https://i.ytimg.com/vi/GpwA1TweohQ/hqdefault.jpg",
+      "published_at": "2024-04-24T04:41:34Z",
+      "duration": 8,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 3362,
+        "likes": 11,
+        "comments": 1
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "F4Kd_1hqQK8",
+      "title": "사이판 다이빙 계획 중이라고?🫧 경비 여행코스 11분 총정리",
+      "url": "https://www.youtube.com/watch?v=F4Kd_1hqQK8",
+      "thumbnail": "https://i.ytimg.com/vi/F4Kd_1hqQK8/hqdefault.jpg",
+      "published_at": "2024-04-18T09:00:14Z",
+      "duration": 711,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 6632,
+        "likes": 62,
+        "comments": 5
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "MCIocSmCgGM",
+      "title": "#발리 가 로맨틱한 이유",
+      "url": "https://www.youtube.com/watch?v=MCIocSmCgGM",
+      "thumbnail": "https://i.ytimg.com/vi/MCIocSmCgGM/hqdefault.jpg",
+      "published_at": "2024-04-18T06:22:05Z",
+      "duration": 9,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 617,
+        "likes": 5,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "Hn5b_YNcF44",
+      "title": "자유롭게 바다를 헤엄칠까요? #프리다이빙",
+      "url": "https://www.youtube.com/watch?v=Hn5b_YNcF44",
+      "thumbnail": "https://i.ytimg.com/vi/Hn5b_YNcF44/hqdefault.jpg",
+      "published_at": "2024-04-14T07:00:06Z",
+      "duration": 14,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 2276,
+        "likes": 29,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "zVrAEy3ZXwg",
+      "title": "인어공주가 꿈이라고요? #프리다이빙",
+      "url": "https://www.youtube.com/watch?v=zVrAEy3ZXwg",
+      "thumbnail": "https://i.ytimg.com/vi/zVrAEy3ZXwg/hqdefault.jpg",
+      "published_at": "2024-04-12T09:00:48Z",
+      "duration": 21,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 1587,
+        "likes": 16,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "nQ74Xg-aSCQ",
+      "title": "스쿠버다이빙 뭘 배운다고요?😎 업계 비밀 수영장 실전 교육 대공개",
+      "url": "https://www.youtube.com/watch?v=nQ74Xg-aSCQ",
+      "thumbnail": "https://i.ytimg.com/vi/nQ74Xg-aSCQ/hqdefault.jpg",
+      "published_at": "2024-04-11T09:00:37Z",
+      "duration": 815,
+      "format": "long",
+      "frozen": true,
+      "metrics": {
+        "views": 16132,
+        "likes": 153,
+        "comments": 7
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
+    },
+    {
+      "video_id": "AY8o1A7VRdQ",
+      "title": "인어공주, 너도 할 수 있어! #프리다이빙",
+      "url": "https://www.youtube.com/watch?v=AY8o1A7VRdQ",
+      "thumbnail": "https://i.ytimg.com/vi/AY8o1A7VRdQ/hqdefault.jpg",
+      "published_at": "2024-04-09T09:15:00Z",
+      "duration": 8,
+      "format": "shorts",
+      "frozen": true,
+      "metrics": {
+        "views": 2540,
+        "likes": 25,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
     }
   ]
 }
