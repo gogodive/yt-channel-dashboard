@@ -3,8 +3,40 @@
   "handle": "gogodive",
   "channel_title": "고고다이브",
   "subscribers": 11700,
-  "fetched_at": "2026-07-15T07:56:18.826128+09:00",
+  "fetched_at": "2026-07-16T07:57:36.976099+09:00",
   "videos": [
+    {
+      "video_id": "y5KEq-gFk6c",
+      "title": "[프리토크 EP.01] 잠수이별한 X가 버디로 나타났다｜’버디’",
+      "url": "https://www.youtube.com/watch?v=y5KEq-gFk6c",
+      "thumbnail": "https://i.ytimg.com/vi/y5KEq-gFk6c/hqdefault.jpg",
+      "published_at": "2026-07-15T09:00:30Z",
+      "duration": 746,
+      "format": "long",
+      "frozen": false,
+      "metrics": {
+        "views": 238,
+        "likes": 12,
+        "comments": 1
+      },
+      "metrics_updated_at": "2026-07-16T07:57:36.976099+09:00"
+    },
+    {
+      "video_id": "yG9evjRUPEI",
+      "title": "“잠수이별한 X랑 버디 가능?”",
+      "url": "https://www.youtube.com/watch?v=yG9evjRUPEI",
+      "thumbnail": "https://i.ytimg.com/vi/yG9evjRUPEI/hqdefault.jpg",
+      "published_at": "2026-07-15T06:33:31Z",
+      "duration": 23,
+      "format": "shorts",
+      "frozen": false,
+      "metrics": {
+        "views": 1104,
+        "likes": 5,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-16T07:57:36.976099+09:00"
+    },
     {
       "video_id": "XJ3slW6Ssig",
       "title": "[5분안에 끝내드림] 프리다이빙 자격증 비용💲  🏅 업계 최고 조회수 13만🏅",
@@ -15,11 +47,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 325,
+        "views": 339,
         "likes": 5,
-        "comments": 2
+        "comments": 3
       },
-      "metrics_updated_at": "2026-07-15T07:56:18.826128+09:00"
+      "metrics_updated_at": "2026-07-16T07:57:36.976099+09:00"
     },
     {
       "video_id": "8gfjsO-k6bc",
@@ -31,11 +63,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 2060,
+        "views": 2067,
         "likes": 4,
         "comments": 0
       },
-      "metrics_updated_at": "2026-07-15T07:56:18.826128+09:00"
+      "metrics_updated_at": "2026-07-16T07:57:36.976099+09:00"
     },
     {
       "video_id": "o_cUydxMPiU",
@@ -47,11 +79,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 938,
-        "likes": 15,
+        "views": 964,
+        "likes": 16,
         "comments": 2
       },
-      "metrics_updated_at": "2026-07-15T07:56:18.826128+09:00"
+      "metrics_updated_at": "2026-07-16T07:57:36.976099+09:00"
     },
     {
       "video_id": "Im3Yg-p8ta0",
@@ -63,11 +95,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 1807,
+        "views": 1810,
         "likes": 7,
         "comments": 0
       },
-      "metrics_updated_at": "2026-07-15T07:56:18.826128+09:00"
+      "metrics_updated_at": "2026-07-16T07:57:36.976099+09:00"
     },
     {
       "video_id": "GfRZCQKn2w8",
@@ -79,11 +111,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 710,
+        "views": 717,
         "likes": 13,
         "comments": 0
       },
-      "metrics_updated_at": "2026-07-15T07:56:18.826128+09:00"
+      "metrics_updated_at": "2026-07-16T07:57:36.976099+09:00"
     },
     {
       "video_id": "9-py_eQFaYw",
@@ -95,11 +127,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 2194,
+        "views": 2209,
         "likes": 5,
         "comments": 0
       },
-      "metrics_updated_at": "2026-07-15T07:56:18.826128+09:00"
+      "metrics_updated_at": "2026-07-16T07:57:36.976099+09:00"
     },
     {
       "video_id": "vGVR9Vig8g8",
@@ -111,11 +143,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 4062,
+        "views": 4067,
         "likes": 8,
         "comments": 0
       },
-      "metrics_updated_at": "2026-07-15T07:56:18.826128+09:00"
+      "metrics_updated_at": "2026-07-16T07:57:36.976099+09:00"
     },
     {
       "video_id": "o6192wgkzpU",
@@ -125,7 +157,7 @@
       "published_at": "2026-06-15T08:36:07Z",
       "duration": 17,
       "format": "shorts",
-      "frozen": false,
+      "frozen": true,
       "metrics": {
         "views": 1219,
         "likes": 5,
@@ -3169,38 +3201,6 @@
       "metrics": {
         "views": 1587,
         "likes": 16,
-        "comments": 0
-      },
-      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
-    },
-    {
-      "video_id": "nQ74Xg-aSCQ",
-      "title": "스쿠버다이빙 뭘 배운다고요?😎 업계 비밀 수영장 실전 교육 대공개",
-      "url": "https://www.youtube.com/watch?v=nQ74Xg-aSCQ",
-      "thumbnail": "https://i.ytimg.com/vi/nQ74Xg-aSCQ/hqdefault.jpg",
-      "published_at": "2024-04-11T09:00:37Z",
-      "duration": 815,
-      "format": "long",
-      "frozen": true,
-      "metrics": {
-        "views": 16132,
-        "likes": 153,
-        "comments": 7
-      },
-      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
-    },
-    {
-      "video_id": "AY8o1A7VRdQ",
-      "title": "인어공주, 너도 할 수 있어! #프리다이빙",
-      "url": "https://www.youtube.com/watch?v=AY8o1A7VRdQ",
-      "thumbnail": "https://i.ytimg.com/vi/AY8o1A7VRdQ/hqdefault.jpg",
-      "published_at": "2024-04-09T09:15:00Z",
-      "duration": 8,
-      "format": "shorts",
-      "frozen": true,
-      "metrics": {
-        "views": 2540,
-        "likes": 25,
         "comments": 0
       },
       "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
