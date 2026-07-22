@@ -3,8 +3,40 @@
   "handle": "gogodive",
   "channel_title": "고고다이브",
   "subscribers": 11700,
-  "fetched_at": "2026-07-22T07:55:44.079388+09:00",
+  "fetched_at": "2026-07-23T08:02:10.018978+09:00",
   "videos": [
+    {
+      "video_id": "xIrryoa1LG0",
+      "title": "[5분안에 끝내드림] 이퀄라이징 무조건 뚫리는 3가지 방법 🏅 업계 최고 조회수 10만🏅",
+      "url": "https://www.youtube.com/watch?v=xIrryoa1LG0",
+      "thumbnail": "https://i.ytimg.com/vi/xIrryoa1LG0/hqdefault.jpg",
+      "published_at": "2026-07-22T08:14:46Z",
+      "duration": 301,
+      "format": "long",
+      "frozen": false,
+      "metrics": {
+        "views": 41,
+        "likes": 4,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-23T08:02:10.018978+09:00"
+    },
+    {
+      "video_id": "gt9p8dZz6GA",
+      "title": "“진정한 나의 버디란?”",
+      "url": "https://www.youtube.com/watch?v=gt9p8dZz6GA",
+      "thumbnail": "https://i.ytimg.com/vi/gt9p8dZz6GA/hqdefault.jpg",
+      "published_at": "2026-07-22T00:51:00Z",
+      "duration": 50,
+      "format": "shorts",
+      "frozen": false,
+      "metrics": {
+        "views": 1267,
+        "likes": 0,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-23T08:02:10.018978+09:00"
+    },
     {
       "video_id": "y5KEq-gFk6c",
       "title": "[프리토크 EP.01] 잠수이별한 X가 버디로 나타났다｜’버디’",
@@ -15,11 +47,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 393,
+        "views": 400,
         "likes": 12,
-        "comments": 3
+        "comments": 2
       },
-      "metrics_updated_at": "2026-07-22T07:55:44.079388+09:00"
+      "metrics_updated_at": "2026-07-23T08:02:10.018978+09:00"
     },
     {
       "video_id": "yG9evjRUPEI",
@@ -31,11 +63,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 1148,
+        "views": 1155,
         "likes": 5,
         "comments": 0
       },
-      "metrics_updated_at": "2026-07-22T07:55:44.079388+09:00"
+      "metrics_updated_at": "2026-07-23T08:02:10.018978+09:00"
     },
     {
       "video_id": "XJ3slW6Ssig",
@@ -47,11 +79,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 408,
+        "views": 418,
         "likes": 5,
         "comments": 3
       },
-      "metrics_updated_at": "2026-07-22T07:55:44.079388+09:00"
+      "metrics_updated_at": "2026-07-23T08:02:10.018978+09:00"
     },
     {
       "video_id": "8gfjsO-k6bc",
@@ -63,11 +95,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 2098,
+        "views": 2104,
         "likes": 4,
         "comments": 0
       },
-      "metrics_updated_at": "2026-07-22T07:55:44.079388+09:00"
+      "metrics_updated_at": "2026-07-23T08:02:10.018978+09:00"
     },
     {
       "video_id": "o_cUydxMPiU",
@@ -79,11 +111,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 1078,
-        "likes": 16,
+        "views": 1086,
+        "likes": 17,
         "comments": 2
       },
-      "metrics_updated_at": "2026-07-22T07:55:44.079388+09:00"
+      "metrics_updated_at": "2026-07-23T08:02:10.018978+09:00"
     },
     {
       "video_id": "Im3Yg-p8ta0",
@@ -95,11 +127,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 1827,
+        "views": 1830,
         "likes": 7,
         "comments": 0
       },
-      "metrics_updated_at": "2026-07-22T07:55:44.079388+09:00"
+      "metrics_updated_at": "2026-07-23T08:02:10.018978+09:00"
     },
     {
       "video_id": "GfRZCQKn2w8",
@@ -3169,38 +3201,6 @@
       "metrics": {
         "views": 617,
         "likes": 5,
-        "comments": 0
-      },
-      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
-    },
-    {
-      "video_id": "Hn5b_YNcF44",
-      "title": "자유롭게 바다를 헤엄칠까요? #프리다이빙",
-      "url": "https://www.youtube.com/watch?v=Hn5b_YNcF44",
-      "thumbnail": "https://i.ytimg.com/vi/Hn5b_YNcF44/hqdefault.jpg",
-      "published_at": "2024-04-14T07:00:06Z",
-      "duration": 14,
-      "format": "shorts",
-      "frozen": true,
-      "metrics": {
-        "views": 2276,
-        "likes": 29,
-        "comments": 0
-      },
-      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
-    },
-    {
-      "video_id": "zVrAEy3ZXwg",
-      "title": "인어공주가 꿈이라고요? #프리다이빙",
-      "url": "https://www.youtube.com/watch?v=zVrAEy3ZXwg",
-      "thumbnail": "https://i.ytimg.com/vi/zVrAEy3ZXwg/hqdefault.jpg",
-      "published_at": "2024-04-12T09:00:48Z",
-      "duration": 21,
-      "format": "shorts",
-      "frozen": true,
-      "metrics": {
-        "views": 1587,
-        "likes": 16,
         "comments": 0
       },
       "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
