@@ -3,8 +3,24 @@
   "handle": "gogodive",
   "channel_title": "고고다이브",
   "subscribers": 11700,
-  "fetched_at": "2026-07-24T07:55:19.032019+09:00",
+  "fetched_at": "2026-07-25T08:00:23.847465+09:00",
   "videos": [
+    {
+      "video_id": "WhZRHRrbTQA",
+      "title": "새 마스크가 계속 뿌옇다면? 마스크 유막제거 & 안티포그 관리법",
+      "url": "https://www.youtube.com/watch?v=WhZRHRrbTQA",
+      "thumbnail": "https://i.ytimg.com/vi/WhZRHRrbTQA/hqdefault.jpg",
+      "published_at": "2026-07-24T05:10:11Z",
+      "duration": 115,
+      "format": "long",
+      "frozen": false,
+      "metrics": {
+        "views": 62,
+        "likes": 3,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-07-25T08:00:23.847465+09:00"
+    },
     {
       "video_id": "xIrryoa1LG0",
       "title": "[5분안에 끝내드림] 이퀄라이징 무조건 뚫리는 3가지 방법 🏅 업계 최고 조회수 10만🏅",
@@ -15,11 +31,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 77,
+        "views": 95,
         "likes": 5,
         "comments": 0
       },
-      "metrics_updated_at": "2026-07-24T07:55:19.032019+09:00"
+      "metrics_updated_at": "2026-07-25T08:00:23.847465+09:00"
     },
     {
       "video_id": "gt9p8dZz6GA",
@@ -31,11 +47,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 1284,
+        "views": 1297,
         "likes": 0,
         "comments": 0
       },
-      "metrics_updated_at": "2026-07-24T07:55:19.032019+09:00"
+      "metrics_updated_at": "2026-07-25T08:00:23.847465+09:00"
     },
     {
       "video_id": "y5KEq-gFk6c",
@@ -47,11 +63,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 402,
-        "likes": 12,
+        "views": 409,
+        "likes": 13,
         "comments": 2
       },
-      "metrics_updated_at": "2026-07-24T07:55:19.032019+09:00"
+      "metrics_updated_at": "2026-07-25T08:00:23.847465+09:00"
     },
     {
       "video_id": "yG9evjRUPEI",
@@ -63,11 +79,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 1157,
+        "views": 1164,
         "likes": 6,
         "comments": 0
       },
-      "metrics_updated_at": "2026-07-24T07:55:19.032019+09:00"
+      "metrics_updated_at": "2026-07-25T08:00:23.847465+09:00"
     },
     {
       "video_id": "XJ3slW6Ssig",
@@ -79,11 +95,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 424,
+        "views": 434,
         "likes": 5,
         "comments": 3
       },
-      "metrics_updated_at": "2026-07-24T07:55:19.032019+09:00"
+      "metrics_updated_at": "2026-07-25T08:00:23.847465+09:00"
     },
     {
       "video_id": "8gfjsO-k6bc",
@@ -95,11 +111,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 2108,
+        "views": 2120,
         "likes": 4,
         "comments": 0
       },
-      "metrics_updated_at": "2026-07-24T07:55:19.032019+09:00"
+      "metrics_updated_at": "2026-07-25T08:00:23.847465+09:00"
     },
     {
       "video_id": "o_cUydxMPiU",
@@ -111,11 +127,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 1103,
+        "views": 1117,
         "likes": 17,
         "comments": 2
       },
-      "metrics_updated_at": "2026-07-24T07:55:19.032019+09:00"
+      "metrics_updated_at": "2026-07-25T08:00:23.847465+09:00"
     },
     {
       "video_id": "Im3Yg-p8ta0",
@@ -127,11 +143,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 1832,
+        "views": 1834,
         "likes": 7,
         "comments": 0
       },
-      "metrics_updated_at": "2026-07-24T07:55:19.032019+09:00"
+      "metrics_updated_at": "2026-07-25T08:00:23.847465+09:00"
     },
     {
       "video_id": "GfRZCQKn2w8",
@@ -3186,22 +3202,6 @@
         "views": 6632,
         "likes": 62,
         "comments": 5
-      },
-      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
-    },
-    {
-      "video_id": "MCIocSmCgGM",
-      "title": "#발리 가 로맨틱한 이유",
-      "url": "https://www.youtube.com/watch?v=MCIocSmCgGM",
-      "thumbnail": "https://i.ytimg.com/vi/MCIocSmCgGM/hqdefault.jpg",
-      "published_at": "2024-04-18T06:22:05Z",
-      "duration": 9,
-      "format": "shorts",
-      "frozen": true,
-      "metrics": {
-        "views": 617,
-        "likes": 5,
-        "comments": 0
       },
       "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
     }
