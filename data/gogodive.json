@@ -3,7 +3,7 @@
   "handle": "gogodive",
   "channel_title": "고고다이브",
   "subscribers": 11800,
-  "fetched_at": "2026-08-02T07:54:23.851322+09:00",
+  "fetched_at": "2026-08-03T07:55:46.649019+09:00",
   "videos": [
     {
       "video_id": "WhZRHRrbTQA",
@@ -15,11 +15,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 219,
+        "views": 249,
         "likes": 3,
         "comments": 0
       },
-      "metrics_updated_at": "2026-08-02T07:54:23.851322+09:00"
+      "metrics_updated_at": "2026-08-03T07:55:46.649019+09:00"
     },
     {
       "video_id": "xIrryoa1LG0",
@@ -31,11 +31,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 196,
+        "views": 210,
         "likes": 5,
         "comments": 0
       },
-      "metrics_updated_at": "2026-08-02T07:54:23.851322+09:00"
+      "metrics_updated_at": "2026-08-03T07:55:46.649019+09:00"
     },
     {
       "video_id": "gt9p8dZz6GA",
@@ -47,11 +47,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 1321,
+        "views": 1323,
         "likes": 0,
         "comments": 0
       },
-      "metrics_updated_at": "2026-08-02T07:54:23.851322+09:00"
+      "metrics_updated_at": "2026-08-03T07:55:46.649019+09:00"
     },
     {
       "video_id": "y5KEq-gFk6c",
@@ -63,11 +63,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 442,
+        "views": 447,
         "likes": 13,
         "comments": 2
       },
-      "metrics_updated_at": "2026-08-02T07:54:23.851322+09:00"
+      "metrics_updated_at": "2026-08-03T07:55:46.649019+09:00"
     },
     {
       "video_id": "yG9evjRUPEI",
@@ -79,11 +79,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 1176,
+        "views": 1179,
         "likes": 6,
         "comments": 0
       },
-      "metrics_updated_at": "2026-08-02T07:54:23.851322+09:00"
+      "metrics_updated_at": "2026-08-03T07:55:46.649019+09:00"
     },
     {
       "video_id": "XJ3slW6Ssig",
@@ -93,7 +93,7 @@
       "published_at": "2026-07-03T09:00:07Z",
       "duration": 301,
       "format": "long",
-      "frozen": false,
+      "frozen": true,
       "metrics": {
         "views": 490,
         "likes": 7,
