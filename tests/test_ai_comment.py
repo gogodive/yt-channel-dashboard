@@ -27,11 +27,14 @@ def account(videos):
     return {"brand": "고고다이브", "handle": "gogodive", "videos": videos}
 
 
-def write_cache(tmp_path, hits, comment="캐시된 코멘트", generated_at=None, hit_ids=True):
+def write_cache(tmp_path, hits, comment="캐시된 코멘트", generated_at=None,
+                hit_ids=True, prompt_fp=ai_comment.PROMPT_FINGERPRINT):
     cache = {"hit_key": hit_key(hits), "comment": comment,
              "generated_at": (generated_at or NOW).isoformat()}
     if hit_ids:
         cache["hit_ids"] = sorted(v["video_id"] for v in hits)
+    if prompt_fp:
+        cache["prompt_fp"] = prompt_fp
     (tmp_path / "ai_comment_gogodive.json").write_text(
         json.dumps(cache), encoding="utf-8")
 
@@ -103,6 +106,18 @@ def test_maybe_generate_monday_forces_regen(tmp_path, monkeypatch):
     out = maybe_generate(account(hits), hits, {}, tmp_path, MONDAY)
     assert out["comment"] == "월요일 재분석"
     assert out["generated_at"] == MONDAY.isoformat()
+
+
+def test_maybe_generate_regenerates_when_prompt_changed(tmp_path, monkeypatch):
+    """분석 프레임(프롬프트)을 고치면 히트가 그대로여도 다시 생성한다."""
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "test-key")
+    hits = [video("h1", 500)]
+    write_cache(tmp_path, hits, prompt_fp="old-fingerprint")
+    monkeypatch.setattr(ai_comment, "generate", lambda *a, **k: "새 프레임 코멘트")
+    out = maybe_generate(account(hits), hits, {}, tmp_path, NOW)
+    assert out["comment"] == "새 프레임 코멘트"
+    assert json.loads((tmp_path / "ai_comment_gogodive.json").read_text())["prompt_fp"] \
+        == ai_comment.PROMPT_FINGERPRINT
 
 
 def test_maybe_generate_passes_new_hit_ids(tmp_path, monkeypatch):

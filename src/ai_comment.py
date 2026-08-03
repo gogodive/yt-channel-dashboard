@@ -19,17 +19,50 @@ log = logging.getLogger(__name__)
 
 DEFAULT_MODEL = "claude-opus-4-8"
 
-SYSTEM_PROMPT = """당신은 유튜브 썸네일 전문 분석가입니다. 한 채널의 '히트 영상'(같은 채널 평소 조회수 중앙값의 2배 이상) 썸네일과 비교용 '평균 성과' 썸네일을 보고, 무엇이 클릭을 끌어냈는지 분석합니다.
+# 분석 프레임은 marketing-skills:social 스킬에서 가져왔다.
+#   references/short-form-video.md    → 훅 4분류와 각 훅이 유도하는 시청자 반응
+#   references/reverse-engineering.md → ANALYZE(정량·정성 분리) + PLAYBOOK(패턴 공식화)
+SYSTEM_PROMPT = """당신은 유튜브 썸네일을 분석하는 그로스 마케터입니다. 한 채널의 '히트 영상'(같은 채널·같은 포맷 조회수 중앙값의 2배 이상) 썸네일과 비교용 '평균 성과' 썸네일을 받아, 무엇이 클릭을 끌어냈는지 진단하고 재사용 가능한 공식으로 정리합니다.
 
-다음 형식으로 한국어로 답하세요. 마크다운 헤더 없이 아래 단락 구조를 지키되, 각 단락은 3~5문장으로 간결하게:
+## 분석 관점
 
-[히트 썸네일 공통 패턴] 텍스트 유무·크기·문구 톤, 인물/피사체, 색감·대비, 구도 등 눈에 보이는 공통점.
-[평균 성과 대비 차이] 히트작과 평균작 썸네일의 결정적 차이.
-[다음 썸네일 제안] 이 채널이 바로 적용할 수 있는 구체적 제안 2~3가지.
+썸네일은 영상의 **훅(hook)** 입니다. 스크롤을 멈추게 하는 3초 안에 승부가 납니다. 각 히트 썸네일의 문구·이미지가 아래 어느 훅 유형인지 분류하고, 그 유형이 어떤 반응을 노리는지까지 짚으세요.
 
-라벨에 (신규 진입)이 붙은 히트작이 하나라도 있으면, 맨 앞에 [이번에 새로 진입한 히트작] 단락을 추가해 그 영상(들)의 썸네일이 어떤 점에서 통했는지 먼저 짚어주세요. 신규 진입이 없으면 이 단락은 생략합니다.
+| 훅 유형 | 신호 | 주로 유도하는 반응 |
+|---|---|---|
+| 호기심형 | 비밀·의외의 발견·질문형 ("아무도 말 안 하는", "이거 혹시 내 모습?") | 클릭률 |
+| 가치형 | 구체적 약속·숫자·지름길·경고 ("5분 안에", "3가지 실수") | 저장·완주 |
+| 스토리형 | 변화 전후·실패담·여정 ("3개월 전엔", "이거 망했습니다") | 시청 지속 |
+| 논쟁형 | 대결 구도·통념 반박 ("VS", "그건 틀렸습니다") | 댓글 |
 
-썸네일에 실제로 보이는 것만 근거로 삼고, 추측은 추측이라고 표시하세요."""
+관찰에서 멈추지 말고 **메커니즘**까지 말하세요. "노란 자막이 크다"는 관찰이고, "가치형 훅을 노란 고대비 자막으로 강조해 정보량을 3초 안에 전달한다"가 진단입니다.
+
+## 출력 형식
+
+한국어로, 마크다운 헤더 없이 아래 단락 구조를 지키세요.
+
+[이번에 새로 진입한 히트작]
+라벨에 (신규 진입)이 붙은 히트작이 있을 때만 이 단락을 맨 앞에 씁니다. 없으면 통째로 생략하세요. 그 썸네일이 어떤 훅으로 통했는지 2~3문장.
+
+[히트 공식]
+히트 썸네일의 훅 유형 분포를 한 문장으로 요약한 뒤, 재사용 가능한 패턴을 2~3개 아래 형식으로 뽑으세요. 각 항목은 한 줄로:
+· 패턴: "[구조를 대괄호로 일반화]" — 예: "실제 문구" — 통하는 이유: [훅 유형 + 심리적 메커니즘]
+
+[평균작이 놓친 것]
+히트작과 평균작의 결정적 차이. 평균작의 훅이 왜 약한지(유형이 불분명한지, 구체성이 없는지, 시선을 끌 요소가 없는지) 3~4문장.
+
+[다음 썸네일 처방]
+바로 적용 가능한 지시 2~3가지. 각 항목은 "무엇을 → 어떻게" 형태로 구체적으로. 어떤 주제/포맷에 어떤 패턴을 쓸지까지 지정하세요.
+
+## 규칙
+
+- 썸네일에 **실제로 보이는 것만** 근거로 삼고, 추측은 "(추측)"이라고 표시하세요.
+- 모호한 표현 대신 구체적으로. ("눈에 띄는 색" ❌ → "채도 높은 노랑 자막" ⭕ / "성과가 좋다" ❌ → "중앙값 대비 4.2배" ⭕)
+- 각 단락은 3~5문장. 대시보드에 표시되므로 장황하면 안 읽힙니다."""
+
+
+# 프롬프트(분석 프레임)를 고치면 캐시가 자동으로 무효화되도록 지문을 남긴다.
+PROMPT_FINGERPRINT = hashlib.sha256(SYSTEM_PROMPT.encode()).hexdigest()[:12]
 
 
 def _cache_path(data_dir: Path, handle: str) -> Path:
@@ -132,7 +165,8 @@ def maybe_generate(account: dict, hits: list[dict], config: dict,
         return None
     key = hit_key(hits)
     hits_changed = not cached or cached.get("hit_key") != key
-    if not hits_changed and not is_weekly_refresh_due(cached, now):
+    prompt_changed = (cached or {}).get("prompt_fp") != PROMPT_FINGERPRINT
+    if not hits_changed and not prompt_changed and not is_weekly_refresh_due(cached, now):
         return _result(cached)
     if not os.environ.get("ANTHROPIC_API_KEY"):
         log.warning("%s: ANTHROPIC_API_KEY 없음 — AI 썸네일 코멘트 건너뜀", handle)
@@ -151,6 +185,7 @@ def maybe_generate(account: dict, hits: list[dict], config: dict,
         return _result(cached)
 
     cache = {"hit_key": key, "hit_ids": sorted(v["video_id"] for v in hits),
+             "prompt_fp": PROMPT_FINGERPRINT,
              "comment": comment, "generated_at": now.isoformat()}
     _cache_path(data_dir, handle).write_text(
         json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
