@@ -1,3 +1,4 @@
+import re
 from datetime import datetime, timezone
 
 from src.render import annotate_hot, chart_points, render_html
@@ -93,6 +94,21 @@ def test_render_html_includes_chart():
     assert "조회수 추이 (최근 2년)" in html
     assert 'id="chart-data-0"' in html
     assert "선형 축" in html and "로그 축" in html
+
+
+def test_ai_comment_bold_renders_and_html_is_escaped():
+    account = {
+        "brand": "고고다이브", "handle": "gogodive",
+        "subscribers": 1, "fetched_at": NOW.isoformat(), "videos": [],
+        "_ai_comment": {"comment": '**핵심**은 <script>alert(1)</script> 아님',
+                        "generated_at": NOW.isoformat()},
+    }
+    html = render_html([account], NOW)
+    body = re.search(r'<div class="ai-body">(.*?)</div>', html, re.S).group(1)
+    assert "<strong>핵심</strong>" in body           # 굵게는 렌더링
+    assert "**" not in body                          # 별표가 그대로 남지 않음
+    assert "<script>alert(1)</script>" not in html   # HTML 은 이스케이프
+    assert "&lt;script&gt;" in body
 
 
 def test_render_html_stale_banner():

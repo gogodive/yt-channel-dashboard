@@ -2,11 +2,13 @@
 
 from __future__ import annotations
 
+import re
 import statistics
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape, Undefined
+from markupsafe import Markup, escape
 
 KST = timezone(timedelta(hours=9))
 _TEMPLATE_DIR = Path(__file__).parent
@@ -30,6 +32,16 @@ def _fmt_dur(seconds) -> str:
     if s >= 3600:
         return f"{s // 3600}:{s % 3600 // 60:02d}:{s % 60:02d}"
     return f"{s // 60}:{s % 60:02d}"
+
+
+_BOLD_RE = re.compile(r"\*\*(.+?)\*\*", re.S)
+
+
+def _md_lite(text) -> Markup:
+    """AI 코멘트용 최소 마크다운 — **굵게**만 지원하고 나머지는 그대로 이스케이프."""
+    if not text or isinstance(text, Undefined):
+        return Markup("")
+    return Markup(_BOLD_RE.sub(r"<strong>\1</strong>", str(escape(text))))
 
 
 def _parse_ts(ts: str) -> datetime:
@@ -97,6 +109,7 @@ def render_html(accounts: list[dict], generated_at: datetime) -> str:
     env.filters["num"] = _fmt_num
     env.filters["date"] = _fmt_date
     env.filters["dur"] = _fmt_dur
+    env.filters["mdlite"] = _md_lite
     tpl = env.get_template("template.html")
     gen_date = generated_at.astimezone(KST).date()
     for acc in accounts:

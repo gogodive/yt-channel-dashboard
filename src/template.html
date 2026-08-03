@@ -102,7 +102,7 @@
       <div class="ai-title">🤖 AI 썸네일 분석 (히트 영상 기준)
         {% if acc._ai_comment.generated_at %}<span class="ai-date">분석 기준일 {{ acc._ai_comment.generated_at | date }}</span>{% endif %}
       </div>
-      <div class="ai-body">{{ acc._ai_comment.comment }}</div>
+      <div class="ai-body">{{ acc._ai_comment.comment | mdlite }}</div>
     </div>
     {% endif %}
 
