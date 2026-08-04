@@ -3,8 +3,40 @@
   "handle": "gogodive",
   "channel_title": "고고다이브",
   "subscribers": 11800,
-  "fetched_at": "2026-08-04T07:58:56.663700+09:00",
+  "fetched_at": "2026-08-05T08:02:31.665312+09:00",
   "videos": [
+    {
+      "video_id": "4U41u4bylwU",
+      "title": "[프리토크] EP.2 | 캐리어 분실 vs 역대 최악의 멤버 | 여행",
+      "url": "https://www.youtube.com/watch?v=4U41u4bylwU",
+      "thumbnail": "https://i.ytimg.com/vi/4U41u4bylwU/hqdefault.jpg",
+      "published_at": "2026-08-04T09:30:08Z",
+      "duration": 1140,
+      "format": "long",
+      "frozen": false,
+      "metrics": {
+        "views": 202,
+        "likes": 11,
+        "comments": 1
+      },
+      "metrics_updated_at": "2026-08-05T08:02:31.665312+09:00"
+    },
+    {
+      "video_id": "grrtm1GOyGk",
+      "title": "“나홀로 프다 여행 가능?”",
+      "url": "https://www.youtube.com/watch?v=grrtm1GOyGk",
+      "thumbnail": "https://i.ytimg.com/vi/grrtm1GOyGk/hqdefault.jpg",
+      "published_at": "2026-08-04T08:38:25Z",
+      "duration": 31,
+      "format": "shorts",
+      "frozen": false,
+      "metrics": {
+        "views": 1363,
+        "likes": 2,
+        "comments": 1
+      },
+      "metrics_updated_at": "2026-08-05T08:02:31.665312+09:00"
+    },
     {
       "video_id": "WhZRHRrbTQA",
       "title": "새 마스크가 계속 뿌옇다면? 마스크 유막제거 & 안티포그 관리법",
@@ -15,11 +47,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 265,
+        "views": 288,
         "likes": 3,
         "comments": 0
       },
-      "metrics_updated_at": "2026-08-04T07:58:56.663700+09:00"
+      "metrics_updated_at": "2026-08-05T08:02:31.665312+09:00"
     },
     {
       "video_id": "xIrryoa1LG0",
@@ -31,11 +63,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 232,
+        "views": 253,
         "likes": 5,
         "comments": 0
       },
-      "metrics_updated_at": "2026-08-04T07:58:56.663700+09:00"
+      "metrics_updated_at": "2026-08-05T08:02:31.665312+09:00"
     },
     {
       "video_id": "gt9p8dZz6GA",
@@ -47,11 +79,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 1324,
+        "views": 1331,
         "likes": 0,
         "comments": 0
       },
-      "metrics_updated_at": "2026-08-04T07:58:56.663700+09:00"
+      "metrics_updated_at": "2026-08-05T08:02:31.665312+09:00"
     },
     {
       "video_id": "y5KEq-gFk6c",
@@ -63,11 +95,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 453,
+        "views": 466,
         "likes": 13,
         "comments": 2
       },
-      "metrics_updated_at": "2026-08-04T07:58:56.663700+09:00"
+      "metrics_updated_at": "2026-08-05T08:02:31.665312+09:00"
     },
     {
       "video_id": "yG9evjRUPEI",
@@ -79,11 +111,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 1181,
+        "views": 1188,
         "likes": 6,
         "comments": 0
       },
-      "metrics_updated_at": "2026-08-04T07:58:56.663700+09:00"
+      "metrics_updated_at": "2026-08-05T08:02:31.665312+09:00"
     },
     {
       "video_id": "XJ3slW6Ssig",
@@ -3170,38 +3202,6 @@
         "views": 3655,
         "likes": 17,
         "comments": 9
-      },
-      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
-    },
-    {
-      "video_id": "GpwA1TweohQ",
-      "title": "물 속에서 인싸되는 비결 #스쿠버다이빙",
-      "url": "https://www.youtube.com/watch?v=GpwA1TweohQ",
-      "thumbnail": "https://i.ytimg.com/vi/GpwA1TweohQ/hqdefault.jpg",
-      "published_at": "2024-04-24T04:41:34Z",
-      "duration": 8,
-      "format": "shorts",
-      "frozen": true,
-      "metrics": {
-        "views": 3362,
-        "likes": 11,
-        "comments": 1
-      },
-      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
-    },
-    {
-      "video_id": "F4Kd_1hqQK8",
-      "title": "사이판 다이빙 계획 중이라고?🫧 경비 여행코스 11분 총정리",
-      "url": "https://www.youtube.com/watch?v=F4Kd_1hqQK8",
-      "thumbnail": "https://i.ytimg.com/vi/F4Kd_1hqQK8/hqdefault.jpg",
-      "published_at": "2024-04-18T09:00:14Z",
-      "duration": 711,
-      "format": "long",
-      "frozen": true,
-      "metrics": {
-        "views": 6632,
-        "likes": 62,
-        "comments": 5
       },
       "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
     }
