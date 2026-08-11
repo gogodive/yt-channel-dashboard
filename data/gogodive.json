@@ -3,8 +3,40 @@
   "handle": "gogodive",
   "channel_title": "고고다이브",
   "subscribers": 11900,
-  "fetched_at": "2026-08-11T07:35:46.063140+09:00",
+  "fetched_at": "2026-08-12T07:39:51.642011+09:00",
   "videos": [
+    {
+      "video_id": "MKBPmuMhimo",
+      "title": "고고다이브가 처음이라면?🌊 #고고다이브",
+      "url": "https://www.youtube.com/watch?v=MKBPmuMhimo",
+      "thumbnail": "https://i.ytimg.com/vi/MKBPmuMhimo/hqdefault.jpg",
+      "published_at": "2026-08-11T02:24:21Z",
+      "duration": 88,
+      "format": "shorts",
+      "frozen": false,
+      "metrics": {
+        "views": 287,
+        "likes": 0,
+        "comments": 1
+      },
+      "metrics_updated_at": "2026-08-12T07:39:51.642011+09:00"
+    },
+    {
+      "video_id": "9P_H8Ff2xVY",
+      "title": "[웰컴 고고다이브] 고고다이브 처음이라면 이 영상부터｜예약·준비물·강습 과정 총정리",
+      "url": "https://www.youtube.com/watch?v=9P_H8Ff2xVY",
+      "thumbnail": "https://i.ytimg.com/vi/9P_H8Ff2xVY/hqdefault.jpg",
+      "published_at": "2026-08-11T01:58:37Z",
+      "duration": 94,
+      "format": "long",
+      "frozen": false,
+      "metrics": {
+        "views": 83,
+        "likes": 3,
+        "comments": 1
+      },
+      "metrics_updated_at": "2026-08-12T07:39:51.642011+09:00"
+    },
     {
       "video_id": "4U41u4bylwU",
       "title": "[프리토크] EP.2 | 캐리어 분실 vs 역대 최악의 멤버 | 여행",
@@ -15,11 +47,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 347,
+        "views": 348,
         "likes": 12,
         "comments": 1
       },
-      "metrics_updated_at": "2026-08-11T07:35:46.063140+09:00"
+      "metrics_updated_at": "2026-08-12T07:39:51.642011+09:00"
     },
     {
       "video_id": "grrtm1GOyGk",
@@ -31,11 +63,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 1460,
+        "views": 1479,
         "likes": 2,
         "comments": 1
       },
-      "metrics_updated_at": "2026-08-11T07:35:46.063140+09:00"
+      "metrics_updated_at": "2026-08-12T07:39:51.642011+09:00"
     },
     {
       "video_id": "WhZRHRrbTQA",
@@ -47,11 +79,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 427,
+        "views": 442,
         "likes": 3,
         "comments": 0
       },
-      "metrics_updated_at": "2026-08-11T07:35:46.063140+09:00"
+      "metrics_updated_at": "2026-08-12T07:39:51.642011+09:00"
     },
     {
       "video_id": "xIrryoa1LG0",
@@ -63,11 +95,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 309,
-        "likes": 5,
+        "views": 319,
+        "likes": 6,
         "comments": 0
       },
-      "metrics_updated_at": "2026-08-11T07:35:46.063140+09:00"
+      "metrics_updated_at": "2026-08-12T07:39:51.642011+09:00"
     },
     {
       "video_id": "gt9p8dZz6GA",
@@ -79,11 +111,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 1343,
+        "views": 1347,
         "likes": 0,
         "comments": 0
       },
-      "metrics_updated_at": "2026-08-11T07:35:46.063140+09:00"
+      "metrics_updated_at": "2026-08-12T07:39:51.642011+09:00"
     },
     {
       "video_id": "y5KEq-gFk6c",
@@ -95,11 +127,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 484,
+        "views": 485,
         "likes": 13,
         "comments": 2
       },
-      "metrics_updated_at": "2026-08-11T07:35:46.063140+09:00"
+      "metrics_updated_at": "2026-08-12T07:39:51.642011+09:00"
     },
     {
       "video_id": "yG9evjRUPEI",
@@ -111,11 +143,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 1197,
+        "views": 1198,
         "likes": 6,
         "comments": 0
       },
-      "metrics_updated_at": "2026-08-11T07:35:46.063140+09:00"
+      "metrics_updated_at": "2026-08-12T07:39:51.642011+09:00"
     },
     {
       "video_id": "XJ3slW6Ssig",
@@ -3170,38 +3202,6 @@
         "views": 5680,
         "likes": 60,
         "comments": 11
-      },
-      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
-    },
-    {
-      "video_id": "0_TCJdM4Wvk",
-      "title": "물고기와 교감하는법  #스쿠버다이빙",
-      "url": "https://www.youtube.com/watch?v=0_TCJdM4Wvk",
-      "thumbnail": "https://i.ytimg.com/vi/0_TCJdM4Wvk/hqdefault.jpg",
-      "published_at": "2024-04-25T23:00:00Z",
-      "duration": 10,
-      "format": "shorts",
-      "frozen": true,
-      "metrics": {
-        "views": 9943,
-        "likes": 70,
-        "comments": 0
-      },
-      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
-    },
-    {
-      "video_id": "g4T2kTI96_Q",
-      "title": "오산 테마 TSN 잠수풀🫧 수심 수온 비용 시간 총정리",
-      "url": "https://www.youtube.com/watch?v=g4T2kTI96_Q",
-      "thumbnail": "https://i.ytimg.com/vi/g4T2kTI96_Q/hqdefault.jpg",
-      "published_at": "2024-04-25T09:00:34Z",
-      "duration": 216,
-      "format": "long",
-      "frozen": true,
-      "metrics": {
-        "views": 3655,
-        "likes": 17,
-        "comments": 9
       },
       "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
     }
