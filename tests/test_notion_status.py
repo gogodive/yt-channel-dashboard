@@ -109,3 +109,17 @@ def test_update_survives_api_failure(monkeypatch):
 
     monkeypatch.setattr("src.notion_status.requests.Session", lambda: Boom([]))
     assert update_hub_callout(CONFIG, [account()], NOW) is False
+
+
+def test_marker_does_not_match_description_callout():
+    """설명용 콜아웃이 상태 콜아웃으로 오인돼 덮어써지면 안 된다."""
+    description = ("📺 유튜브 데일리 대시보드: https://gogodive.github.io/... "
+                   "매일 오전 7시 자동 갱신 · 채널당 최근 200개 영상 · "
+                   "🤖 AI 썸네일 분석: 히트 영상 목록이 바뀐 날 + 매주 월요일에...")
+    assert MARKER not in description
+
+    session = FakeSession([
+        callout_block("desc", description),
+        callout_block("status", f"{MARKER} · 데이터 ... 갱신"),
+    ])
+    assert find_status_block_id(session, "tok", "page123") == "status"

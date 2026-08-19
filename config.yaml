@@ -11,6 +11,6 @@ ai_comment:
   max_baseline: 6     # 비교용 평균 성과 썸네일 개수
 
 notion_status:
-  # 허브 페이지(👾 에이전트 A) 최상단 콜아웃에 마지막 갱신 상태를 기록한다.
-  hub_page_id: "37c39eba97ed80bfa096da931648a4d2"
+  # '자사 유튜브 매일 분석' 페이지 최상단 콜아웃에 마지막 갱신 상태를 기록한다.
+  hub_page_id: "39b39eba97ed80f18c84c414adf53bc2"
   dashboard_url: "https://gogodive.github.io/yt-channel-dashboard/"
