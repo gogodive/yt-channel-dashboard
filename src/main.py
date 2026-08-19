@@ -10,6 +10,7 @@ from pathlib import Path
 
 from src.ai_comment import maybe_generate
 from src.collect import collect_all, load_config
+from src.notion_status import update_hub_callout
 from src.render import annotate_hot, render_html
 from src.youtube import YouTubeClient
 
@@ -39,6 +40,8 @@ def main() -> int:
     site = ROOT / "site"
     site.mkdir(exist_ok=True)
     (site / "index.html").write_text(render_html(accounts, now), encoding="utf-8")
+    update_hub_callout(config, accounts, now)
+
     print(f"완료: {len(accounts)}개 채널 → site/index.html")
     return 0
 

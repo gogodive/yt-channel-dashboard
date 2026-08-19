@@ -4,9 +4,11 @@
 썸네일 + 성과 지표 HTML 대시보드로 GitHub Pages 에 배포합니다.
 인스타그램 대시보드(ig-feed-dashboard)와 같은 구조입니다.
 
-- 채널당 최근 **120개** 영상 표시, 롱폼/쇼츠 구분
+- 채널당 최근 **200개** 영상 표시, 롱폼/쇼츠 구분 (차트는 최근 2년)
 - 성과(조회·좋아요·댓글)는 **게시 후 30일까지만** 매일 갱신, 이후 동결(`확정` 배지)
 - 🔥 히트 기준: 조회수가 **같은 채널·같은 포맷(롱폼/쇼츠) 중앙값의 2배 이상**, 3배 이상은 배수 표기
+- 📌 **노션 허브 페이지 상태 표기**: 실행 끝에 노션 허브 페이지 최상단 콜아웃을
+  "데이터 O월O일 갱신 · AI 분석 O월O일 기준"으로 자동 갱신 (손으로 고쳐도 다음 실행에 덮어씀)
 - 🤖 **AI 썸네일 분석**: 히트 영상 목록이 바뀐 날 + **매주 월요일**에 Claude(비전)가
   히트 vs 평균 썸네일을 비교 분석한 코멘트를 생성 (그 외에는 API 호출 없이 캐시 재사용).
   코멘트에 분석 기준일 표시, 신규 진입 히트작은 별도 단락으로 짚어줌
@@ -23,9 +25,14 @@
 1. https://console.anthropic.com → API Keys → 키 생성
 2. 없으면 AI 코멘트만 건너뛰고 대시보드는 정상 동작
 
-### 3. GitHub
+### 3. 노션 토큰 (허브 페이지 상태 표기용, 선택)
+1. https://www.notion.so/my-integrations → **New integration** (Internal) → 토큰(`ntn_...`) 복사
+2. 노션 허브 페이지(👾 에이전트 A) → 우측 상단 ··· → **연결** → 만든 integration 추가
+3. 없으면 노션 갱신만 건너뛰고 대시보드는 정상 동작
+
+### 4. GitHub
 1. 이 저장소를 GitHub 에 push (public — Pages 무료 사용 조건)
-2. Settings → Secrets and variables → Actions → `YOUTUBE_API_KEY`, `ANTHROPIC_API_KEY` 등록
+2. Settings → Secrets and variables → Actions → `YOUTUBE_API_KEY`, `ANTHROPIC_API_KEY`, `NOTION_TOKEN` 등록
 3. Settings → Pages → Source: **GitHub Actions** 선택
 4. Actions 탭 → daily-feed → **Run workflow** 로 첫 실행
 5. 배포 URL 확인 → 노션에 링크 등록
@@ -50,5 +57,7 @@ pytest -v
 ## 트러블슈팅
 - **채널이 안 잡힘** — config.yaml 의 handle 이 유튜브 핸들(@뒤 부분)과 일치하는지 확인
 - **쇼츠/롱폼이 잘못 분류됨** — data/<handle>.json 에서 해당 영상의 `format` 값을 수정하면 유지됨
+- **노션 콜아웃이 안 바뀜** — `NOTION_TOKEN` 시크릿 등록 여부, 허브 페이지에 integration 을
+  '연결'했는지, 콜아웃에 "유튜브 대시보드" 문구가 남아 있는지 확인
 - **AI 코멘트가 안 나옴** — `ANTHROPIC_API_KEY` 시크릿 등록 여부 확인, 히트 영상이 없으면 생성 안 함
 - **실행 실패 메일** — GitHub 이 workflow 실패 시 자동 발송. Actions 탭에서 로그 확인

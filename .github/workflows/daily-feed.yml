@@ -33,6 +33,7 @@ jobs:
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
         run: python -m src.main
 
       - name: Commit updated data
