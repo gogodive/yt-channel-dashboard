@@ -3,8 +3,24 @@
   "handle": "gogodive",
   "channel_title": "고고다이브",
   "subscribers": 12000,
-  "fetched_at": "2026-08-19T07:21:15.933358+09:00",
+  "fetched_at": "2026-08-19T12:11:47.038098+09:00",
   "videos": [
+    {
+      "video_id": "CWAMEoWY9fU",
+      "title": "마스크 유막제거 끝판왕🤿 #유막제거 #마스크 #다이빙마스크",
+      "url": "https://www.youtube.com/watch?v=CWAMEoWY9fU",
+      "thumbnail": "https://i.ytimg.com/vi/CWAMEoWY9fU/hqdefault.jpg",
+      "published_at": "2026-08-19T03:00:21Z",
+      "duration": 91,
+      "format": "shorts",
+      "frozen": false,
+      "metrics": {
+        "views": 20,
+        "likes": 0,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-08-19T12:11:47.038098+09:00"
+    },
     {
       "video_id": "MKBPmuMhimo",
       "title": "고고다이브가 처음이라면?🌊 #고고다이브",
@@ -19,7 +35,7 @@
         "likes": 1,
         "comments": 1
       },
-      "metrics_updated_at": "2026-08-19T07:21:15.933358+09:00"
+      "metrics_updated_at": "2026-08-19T12:11:47.038098+09:00"
     },
     {
       "video_id": "9P_H8Ff2xVY",
@@ -31,11 +47,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 258,
+        "views": 259,
         "likes": 5,
         "comments": 2
       },
-      "metrics_updated_at": "2026-08-19T07:21:15.933358+09:00"
+      "metrics_updated_at": "2026-08-19T12:11:47.038098+09:00"
     },
     {
       "video_id": "4U41u4bylwU",
@@ -51,7 +67,7 @@
         "likes": 13,
         "comments": 1
       },
-      "metrics_updated_at": "2026-08-19T07:21:15.933358+09:00"
+      "metrics_updated_at": "2026-08-19T12:11:47.038098+09:00"
     },
     {
       "video_id": "grrtm1GOyGk",
@@ -67,7 +83,7 @@
         "likes": 2,
         "comments": 1
       },
-      "metrics_updated_at": "2026-08-19T07:21:15.933358+09:00"
+      "metrics_updated_at": "2026-08-19T12:11:47.038098+09:00"
     },
     {
       "video_id": "WhZRHRrbTQA",
@@ -79,11 +95,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 545,
+        "views": 552,
         "likes": 3,
         "comments": 0
       },
-      "metrics_updated_at": "2026-08-19T07:21:15.933358+09:00"
+      "metrics_updated_at": "2026-08-19T12:11:47.038098+09:00"
     },
     {
       "video_id": "xIrryoa1LG0",
@@ -95,11 +111,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 386,
+        "views": 388,
         "likes": 7,
         "comments": 0
       },
-      "metrics_updated_at": "2026-08-19T07:21:15.933358+09:00"
+      "metrics_updated_at": "2026-08-19T12:11:47.038098+09:00"
     },
     {
       "video_id": "gt9p8dZz6GA",
@@ -115,7 +131,7 @@
         "likes": 0,
         "comments": 0
       },
-      "metrics_updated_at": "2026-08-19T07:21:15.933358+09:00"
+      "metrics_updated_at": "2026-08-19T12:11:47.038098+09:00"
     },
     {
       "video_id": "y5KEq-gFk6c",
@@ -3186,22 +3202,6 @@
         "views": 9311,
         "likes": 37,
         "comments": 1
-      },
-      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
-    },
-    {
-      "video_id": "K1tEuRTdKSQ",
-      "title": "해외 다이빙 갈 때 짐 싸기 체크리스트✔️ 롱핀은 어떻게 하나요?",
-      "url": "https://www.youtube.com/watch?v=K1tEuRTdKSQ",
-      "thumbnail": "https://i.ytimg.com/vi/K1tEuRTdKSQ/hqdefault.jpg",
-      "published_at": "2024-05-02T09:00:13Z",
-      "duration": 899,
-      "format": "long",
-      "frozen": true,
-      "metrics": {
-        "views": 5680,
-        "likes": 60,
-        "comments": 11
       },
       "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
     }
