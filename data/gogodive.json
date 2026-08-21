@@ -3,8 +3,24 @@
   "handle": "gogodive",
   "channel_title": "고고다이브",
   "subscribers": 12000,
-  "fetched_at": "2026-08-21T07:26:13.919223+09:00",
+  "fetched_at": "2026-08-22T07:22:44.572798+09:00",
   "videos": [
+    {
+      "video_id": "0Tjp5OwlNSk",
+      "title": "[웰컴 고고다이브] 무제한 코칭반 '고고다이브' | 프리다이빙 레벨부터 준비물까지 완전정리",
+      "url": "https://www.youtube.com/watch?v=0Tjp5OwlNSk",
+      "thumbnail": "https://i.ytimg.com/vi/0Tjp5OwlNSk/hqdefault.jpg",
+      "published_at": "2026-08-21T08:51:45Z",
+      "duration": 197,
+      "format": "long",
+      "frozen": false,
+      "metrics": {
+        "views": 61,
+        "likes": 4,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-08-22T07:22:44.572798+09:00"
+    },
     {
       "video_id": "CWAMEoWY9fU",
       "title": "마스크 유막제거 끝판왕🤿 #유막제거 #마스크 #다이빙마스크",
@@ -15,11 +31,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 1276,
-        "likes": 0,
+        "views": 1584,
+        "likes": 1,
         "comments": 0
       },
-      "metrics_updated_at": "2026-08-21T07:26:13.919223+09:00"
+      "metrics_updated_at": "2026-08-22T07:22:44.572798+09:00"
     },
     {
       "video_id": "MKBPmuMhimo",
@@ -31,11 +47,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 435,
+        "views": 439,
         "likes": 1,
         "comments": 1
       },
-      "metrics_updated_at": "2026-08-21T07:26:13.919223+09:00"
+      "metrics_updated_at": "2026-08-22T07:22:44.572798+09:00"
     },
     {
       "video_id": "9P_H8Ff2xVY",
@@ -47,11 +63,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 300,
+        "views": 311,
         "likes": 5,
         "comments": 2
       },
-      "metrics_updated_at": "2026-08-21T07:26:13.919223+09:00"
+      "metrics_updated_at": "2026-08-22T07:22:44.572798+09:00"
     },
     {
       "video_id": "4U41u4bylwU",
@@ -63,11 +79,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 396,
+        "views": 398,
         "likes": 13,
         "comments": 1
       },
-      "metrics_updated_at": "2026-08-21T07:26:13.919223+09:00"
+      "metrics_updated_at": "2026-08-22T07:22:44.572798+09:00"
     },
     {
       "video_id": "grrtm1GOyGk",
@@ -83,7 +99,7 @@
         "likes": 2,
         "comments": 1
       },
-      "metrics_updated_at": "2026-08-21T07:26:13.919223+09:00"
+      "metrics_updated_at": "2026-08-22T07:22:44.572798+09:00"
     },
     {
       "video_id": "WhZRHRrbTQA",
@@ -95,11 +111,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 575,
+        "views": 592,
         "likes": 3,
         "comments": 0
       },
-      "metrics_updated_at": "2026-08-21T07:26:13.919223+09:00"
+      "metrics_updated_at": "2026-08-22T07:22:44.572798+09:00"
     },
     {
       "video_id": "xIrryoa1LG0",
@@ -109,7 +125,7 @@
       "published_at": "2026-07-22T08:14:46Z",
       "duration": 301,
       "format": "long",
-      "frozen": false,
+      "frozen": true,
       "metrics": {
         "views": 406,
         "likes": 7,
@@ -125,7 +141,7 @@
       "published_at": "2026-07-22T00:51:00Z",
       "duration": 50,
       "format": "shorts",
-      "frozen": false,
+      "frozen": true,
       "metrics": {
         "views": 1360,
         "likes": 0,
@@ -3186,22 +3202,6 @@
         "views": 4094,
         "likes": 28,
         "comments": 0
-      },
-      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
-    },
-    {
-      "video_id": "RJv7ttMlBMU",
-      "title": "프리다이버 70명의 단체 댄스",
-      "url": "https://www.youtube.com/watch?v=RJv7ttMlBMU",
-      "thumbnail": "https://i.ytimg.com/vi/RJv7ttMlBMU/hqdefault.jpg",
-      "published_at": "2024-05-02T12:00:31Z",
-      "duration": 14,
-      "format": "shorts",
-      "frozen": true,
-      "metrics": {
-        "views": 9311,
-        "likes": 37,
-        "comments": 1
       },
       "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
     }
