@@ -3,7 +3,7 @@
   "handle": "gogodive",
   "channel_title": "고고다이브",
   "subscribers": 12100,
-  "fetched_at": "2026-09-03T08:52:19.909755+09:00",
+  "fetched_at": "2026-09-04T08:47:27.131350+09:00",
   "videos": [
     {
       "video_id": "0Tjp5OwlNSk",
@@ -15,11 +15,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 293,
+        "views": 305,
         "likes": 6,
         "comments": 0
       },
-      "metrics_updated_at": "2026-09-03T08:52:19.909755+09:00"
+      "metrics_updated_at": "2026-09-04T08:47:27.131350+09:00"
     },
     {
       "video_id": "CWAMEoWY9fU",
@@ -31,11 +31,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 2021,
+        "views": 2044,
         "likes": 3,
         "comments": 0
       },
-      "metrics_updated_at": "2026-09-03T08:52:19.909755+09:00"
+      "metrics_updated_at": "2026-09-04T08:47:27.131350+09:00"
     },
     {
       "video_id": "MKBPmuMhimo",
@@ -51,7 +51,7 @@
         "likes": 2,
         "comments": 1
       },
-      "metrics_updated_at": "2026-09-03T08:52:19.909755+09:00"
+      "metrics_updated_at": "2026-09-04T08:47:27.131350+09:00"
     },
     {
       "video_id": "9P_H8Ff2xVY",
@@ -63,11 +63,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 533,
+        "views": 555,
         "likes": 6,
         "comments": 1
       },
-      "metrics_updated_at": "2026-09-03T08:52:19.909755+09:00"
+      "metrics_updated_at": "2026-09-04T08:47:27.131350+09:00"
     },
     {
       "video_id": "4U41u4bylwU",
@@ -77,7 +77,7 @@
       "published_at": "2026-08-04T09:30:08Z",
       "duration": 1140,
       "format": "long",
-      "frozen": false,
+      "frozen": true,
       "metrics": {
         "views": 444,
         "likes": 13,
@@ -93,7 +93,7 @@
       "published_at": "2026-08-04T08:38:25Z",
       "duration": 31,
       "format": "shorts",
-      "frozen": false,
+      "frozen": true,
       "metrics": {
         "views": 1538,
         "likes": 2,
