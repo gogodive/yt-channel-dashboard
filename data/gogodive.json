@@ -3,7 +3,7 @@
   "handle": "gogodive",
   "channel_title": "고고다이브",
   "subscribers": 12100,
-  "fetched_at": "2026-09-08T08:59:50.116152+09:00",
+  "fetched_at": "2026-09-09T08:50:46.335667+09:00",
   "videos": [
     {
       "video_id": "0Tjp5OwlNSk",
@@ -15,11 +15,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 363,
+        "views": 376,
         "likes": 6,
         "comments": 0
       },
-      "metrics_updated_at": "2026-09-08T08:59:50.116152+09:00"
+      "metrics_updated_at": "2026-09-09T08:50:46.335667+09:00"
     },
     {
       "video_id": "CWAMEoWY9fU",
@@ -31,11 +31,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 2132,
+        "views": 2150,
         "likes": 4,
         "comments": 0
       },
-      "metrics_updated_at": "2026-09-08T08:59:50.116152+09:00"
+      "metrics_updated_at": "2026-09-09T08:50:46.335667+09:00"
     },
     {
       "video_id": "MKBPmuMhimo",
@@ -47,11 +47,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 484,
+        "views": 485,
         "likes": 2,
         "comments": 1
       },
-      "metrics_updated_at": "2026-09-08T08:59:50.116152+09:00"
+      "metrics_updated_at": "2026-09-09T08:50:46.335667+09:00"
     },
     {
       "video_id": "9P_H8Ff2xVY",
@@ -63,11 +63,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 632,
+        "views": 648,
         "likes": 6,
         "comments": 1
       },
-      "metrics_updated_at": "2026-09-08T08:59:50.116152+09:00"
+      "metrics_updated_at": "2026-09-09T08:50:46.335667+09:00"
     },
     {
       "video_id": "4U41u4bylwU",
