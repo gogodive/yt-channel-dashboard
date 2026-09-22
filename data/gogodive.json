@@ -3,7 +3,7 @@
   "handle": "gogodive",
   "channel_title": "고고다이브",
   "subscribers": 12200,
-  "fetched_at": "2026-09-22T09:36:03.416040+09:00",
+  "fetched_at": "2026-09-23T08:59:47.443843+09:00",
   "videos": [
     {
       "video_id": "0Tjp5OwlNSk",
@@ -187,7 +187,7 @@
       "url": "https://www.youtube.com/watch?v=XJ3slW6Ssig",
       "thumbnail": "https://i.ytimg.com/vi/XJ3slW6Ssig/hqdefault.jpg",
       "published_at": "2026-07-03T09:00:07Z",
-      "duration": 301,
+      "duration": 302,
       "format": "long",
       "frozen": true,
       "metrics": {
