@@ -28,8 +28,9 @@ def account(videos):
 
 
 def write_cache(tmp_path, hits, comment="캐시된 코멘트", generated_at=None,
-                hit_ids=True, prompt_fp=ai_comment.PROMPT_FINGERPRINT):
-    cache = {"hit_key": hit_key(hits), "comment": comment,
+                hit_ids=True, prompt_fp=ai_comment.PROMPT_FINGERPRINT,
+                model=ai_comment.DEFAULT_MODEL):
+    cache = {"hit_key": hit_key(hits), "comment": comment, "model": model,
              "generated_at": (generated_at or NOW).isoformat()}
     if hit_ids:
         cache["hit_ids"] = sorted(v["video_id"] for v in hits)
@@ -120,6 +121,30 @@ def test_maybe_generate_regenerates_when_prompt_changed(tmp_path, monkeypatch):
         == ai_comment.PROMPT_FINGERPRINT
 
 
+def test_maybe_generate_regenerates_when_model_changed(tmp_path, monkeypatch):
+    """모델을 바꾸면 히트가 그대로여도 다시 생성한다."""
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "test-key")
+    hits = [video("h1", 500)]
+    write_cache(tmp_path, hits, model="claude-opus-4-8")
+    monkeypatch.setattr(ai_comment, "generate", lambda *a, **k: "새 모델 코멘트")
+    out = maybe_generate(account(hits), hits,
+                         {"ai_comment": {"model": "claude-opus-5-5"}}, tmp_path, NOW)
+    assert out["comment"] == "새 모델 코멘트"
+    cached = json.loads((tmp_path / "ai_comment_gogodive.json").read_text())
+    assert cached["model"] == "claude-opus-5-5"
+
+
+def test_maybe_generate_passes_configured_model(tmp_path, monkeypatch):
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "test-key")
+    seen = {}
+    monkeypatch.setattr(ai_comment, "generate",
+                        lambda brand, h, b, model, new_ids=frozenset(): seen.setdefault("model", model) or "c")
+    hits = [video("h1", 500)]
+    maybe_generate(account(hits), hits,
+                   {"ai_comment": {"model": "claude-opus-5-5"}}, tmp_path, NOW)
+    assert seen["model"] == "claude-opus-5-5"
+
+
 def test_maybe_generate_passes_new_hit_ids(tmp_path, monkeypatch):
     monkeypatch.setenv("ANTHROPIC_API_KEY", "test-key")
     old_hits = [video("h1", 500)]
@@ -153,3 +178,66 @@ def test_maybe_generate_calls_api_and_caches(tmp_path, monkeypatch):
     assert cached["comment"] == "새 코멘트"
     assert cached["hit_key"] == hit_key(hits)
     assert cached["hit_ids"] == ["h1"]
+
+
+# ── generate(): Opus 5.5 는 thinking 을 끌 수 없어 응답이 비거나 거절될 수 있다 ──
+
+class FakeBlock:
+    def __init__(self, type_, text=""):
+        self.type, self.text = type_, text
+
+
+class FakeResponse:
+    def __init__(self, content, stop_reason="end_turn"):
+        self.content, self.stop_reason = content, stop_reason
+
+
+def fake_client(response, captured):
+    class Messages:
+        def create(self, **kw):
+            captured.update(kw)
+            return response
+
+    class Client:
+        messages = Messages()
+
+    return lambda: Client()
+
+
+def run_generate(monkeypatch, response):
+    captured = {}
+    import anthropic
+    monkeypatch.setattr(anthropic, "Anthropic", fake_client(response, captured))
+    text = generate_fn("고고다이브", [video("h1", 1)], [], "claude-opus-5-5")
+    return text, captured
+
+
+from src.ai_comment import generate as generate_fn  # noqa: E402
+
+
+def test_generate_sends_thinking_and_effort(monkeypatch):
+    text, kw = run_generate(monkeypatch, FakeResponse([FakeBlock("text", "결과")]))
+    assert text == "결과"
+    assert kw["thinking"] == {"type": "adaptive"}
+    assert kw["output_config"] == {"effort": "high"}
+    # thinking 과 응답이 예산을 공유하므로 2000 같은 낮은 값이면 안 된다
+    assert kw["max_tokens"] >= 8000
+
+
+def test_generate_ignores_thinking_blocks(monkeypatch):
+    text, _ = run_generate(monkeypatch, FakeResponse(
+        [FakeBlock("thinking"), FakeBlock("text", "본문")]))
+    assert text == "본문"
+
+
+def test_generate_raises_on_refusal(monkeypatch):
+    import pytest
+    with pytest.raises(RuntimeError, match="거절"):
+        run_generate(monkeypatch, FakeResponse([], stop_reason="refusal"))
+
+
+def test_generate_raises_on_empty(monkeypatch):
+    import pytest
+    with pytest.raises(RuntimeError, match="빈 응답"):
+        run_generate(monkeypatch, FakeResponse([FakeBlock("thinking")],
+                                               stop_reason="max_tokens"))

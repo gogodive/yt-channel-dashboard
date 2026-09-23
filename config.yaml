@@ -6,7 +6,7 @@ display_limit: 200   # 차트가 최근 2년을 커버하도록 확대
 freeze_days: 30
 
 ai_comment:
-  model: claude-opus-4-8
+  model: claude-opus-5-5
   max_hits: 10        # AI에 보낼 히트 썸네일 최대 개수
   max_baseline: 6     # 비교용 평균 성과 썸네일 개수
 

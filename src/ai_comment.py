@@ -17,7 +17,7 @@ from pathlib import Path
 
 log = logging.getLogger(__name__)
 
-DEFAULT_MODEL = "claude-opus-4-8"
+DEFAULT_MODEL = "claude-opus-5-5"
 
 # 분석 프레임은 marketing-skills:social 스킬에서 가져왔다.
 #   references/short-form-video.md    → 훅 4분류와 각 훅이 유도하는 시청자 반응
@@ -143,11 +143,22 @@ def generate(brand: str, hits: list[dict], baseline: list[dict], model: str,
     client = anthropic.Anthropic()
     response = client.messages.create(
         model=model,
-        max_tokens=2000,
+        # Opus 5.5 는 thinking 을 끌 수 없다. thinking 과 응답이 max_tokens 를 함께
+        # 쓰므로 넉넉히 잡아야 코멘트가 잘리지 않는다.
+        max_tokens=16000,
+        thinking={"type": "adaptive"},
+        # Opus 5.5 의 effort 기본값은 medium. 썸네일 패턴 추출은 판단이 필요한 작업이라
+        # 명시적으로 high 로 둔다(호출이 월 10회 미만이라 비용 영향은 미미).
+        output_config={"effort": "high"},
         system=SYSTEM_PROMPT,
         messages=build_messages(brand, hits, baseline, new_ids),
     )
-    return "".join(b.text for b in response.content if b.type == "text").strip()
+    if response.stop_reason == "refusal":
+        raise RuntimeError("안전 분류기가 요청을 거절함")
+    text = "".join(b.text for b in response.content if b.type == "text").strip()
+    if not text:
+        raise RuntimeError(f"빈 응답 (stop_reason={response.stop_reason})")
+    return text
 
 
 def maybe_generate(account: dict, hits: list[dict], config: dict,
@@ -165,8 +176,11 @@ def maybe_generate(account: dict, hits: list[dict], config: dict,
         return None
     key = hit_key(hits)
     hits_changed = not cached or cached.get("hit_key") != key
+    model = ai_cfg.get("model", DEFAULT_MODEL)
     prompt_changed = (cached or {}).get("prompt_fp") != PROMPT_FINGERPRINT
-    if not hits_changed and not prompt_changed and not is_weekly_refresh_due(cached, now):
+    model_changed = (cached or {}).get("model") != model
+    if not (hits_changed or prompt_changed or model_changed
+            or is_weekly_refresh_due(cached, now)):
         return _result(cached)
     if not os.environ.get("ANTHROPIC_API_KEY"):
         log.warning("%s: ANTHROPIC_API_KEY 없음 — AI 썸네일 코멘트 건너뜀", handle)
@@ -178,14 +192,13 @@ def maybe_generate(account: dict, hits: list[dict], config: dict,
     baseline = pick_baseline(account.get("videos", []), hits,
                              ai_cfg.get("max_baseline", 6))
     try:
-        comment = generate(account["brand"], hits, baseline,
-                           ai_cfg.get("model", DEFAULT_MODEL), new_ids)
+        comment = generate(account["brand"], hits, baseline, model, new_ids)
     except Exception:
         log.exception("%s: AI 썸네일 코멘트 생성 실패 — 이전 코멘트 유지", handle)
         return _result(cached)
 
     cache = {"hit_key": key, "hit_ids": sorted(v["video_id"] for v in hits),
-             "prompt_fp": PROMPT_FINGERPRINT,
+             "prompt_fp": PROMPT_FINGERPRINT, "model": model,
              "comment": comment, "generated_at": now.isoformat()}
     _cache_path(data_dir, handle).write_text(
         json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
