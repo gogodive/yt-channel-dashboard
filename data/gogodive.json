@@ -3,8 +3,56 @@
   "handle": "gogodive",
   "channel_title": "고고다이브",
   "subscribers": 12200,
-  "fetched_at": "2026-09-23T08:59:47.443843+09:00",
+  "fetched_at": "2026-09-24T09:14:37.106488+09:00",
   "videos": [
+    {
+      "video_id": "b5wi7Uzf99Y",
+      "title": "가능..? 불가능...?",
+      "url": "https://www.youtube.com/watch?v=b5wi7Uzf99Y",
+      "thumbnail": "https://i.ytimg.com/vi/b5wi7Uzf99Y/hqdefault.jpg",
+      "published_at": "2026-09-23T03:46:49Z",
+      "duration": 59,
+      "format": "shorts",
+      "frozen": false,
+      "metrics": {
+        "views": 954,
+        "likes": 2,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-09-24T09:14:37.106488+09:00"
+    },
+    {
+      "video_id": "J6YExJTLjBw",
+      "title": "[프리토크 EP.3] 연애 & 썸 편",
+      "url": "https://www.youtube.com/watch?v=J6YExJTLjBw",
+      "thumbnail": "https://i.ytimg.com/vi/J6YExJTLjBw/hqdefault.jpg",
+      "published_at": "2026-09-23T03:43:33Z",
+      "duration": 33,
+      "format": "shorts",
+      "frozen": false,
+      "metrics": {
+        "views": 1185,
+        "likes": 1,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-09-24T09:14:37.106488+09:00"
+    },
+    {
+      "video_id": "MuhYpeZIopc",
+      "title": "[프리토크] EP.3 애인 있는데 이성 버디랑 밤에 단둘이… 밥까지?",
+      "url": "https://www.youtube.com/watch?v=MuhYpeZIopc",
+      "thumbnail": "https://i.ytimg.com/vi/MuhYpeZIopc/hqdefault.jpg",
+      "published_at": "2026-09-23T03:00:37Z",
+      "duration": 1789,
+      "format": "long",
+      "frozen": false,
+      "metrics": {
+        "views": 318,
+        "likes": 7,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-09-24T09:14:37.106488+09:00"
+    },
     {
       "video_id": "0Tjp5OwlNSk",
       "title": "[웰컴 고고다이브] 무제한 코칭반 '고고다이브' | 프리다이빙 레벨부터 준비물까지 완전정리",
@@ -3153,54 +3201,6 @@
       "metrics": {
         "views": 1217,
         "likes": 3,
-        "comments": 0
-      },
-      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
-    },
-    {
-      "video_id": "NdrnJOM5R6I",
-      "title": "죽기전에 꼭 가봐야할 다이빙 성지 TOP5🦈 여행지 포인트 다 알려 드립니다",
-      "url": "https://www.youtube.com/watch?v=NdrnJOM5R6I",
-      "thumbnail": "https://i.ytimg.com/vi/NdrnJOM5R6I/hqdefault.jpg",
-      "published_at": "2024-05-16T09:00:18Z",
-      "duration": 915,
-      "format": "long",
-      "frozen": true,
-      "metrics": {
-        "views": 11815,
-        "likes": 132,
-        "comments": 18
-      },
-      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
-    },
-    {
-      "video_id": "u4wt3RB-ub0",
-      "title": "프리다이빙 연습반 뭘 해야 하나요?😂 + 종합운동장 잠수풀 리뷰",
-      "url": "https://www.youtube.com/watch?v=u4wt3RB-ub0",
-      "thumbnail": "https://i.ytimg.com/vi/u4wt3RB-ub0/hqdefault.jpg",
-      "published_at": "2024-05-09T09:00:43Z",
-      "duration": 342,
-      "format": "long",
-      "frozen": true,
-      "metrics": {
-        "views": 9643,
-        "likes": 75,
-        "comments": 2
-      },
-      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
-    },
-    {
-      "video_id": "eWmdp0dQ4KE",
-      "title": "나 바다에서 인어공주 봤어!",
-      "url": "https://www.youtube.com/watch?v=eWmdp0dQ4KE",
-      "thumbnail": "https://i.ytimg.com/vi/eWmdp0dQ4KE/hqdefault.jpg",
-      "published_at": "2024-05-07T09:30:11Z",
-      "duration": 14,
-      "format": "shorts",
-      "frozen": true,
-      "metrics": {
-        "views": 4094,
-        "likes": 28,
         "comments": 0
       },
       "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
