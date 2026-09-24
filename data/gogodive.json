@@ -3,8 +3,24 @@
   "handle": "gogodive",
   "channel_title": "고고다이브",
   "subscribers": 12200,
-  "fetched_at": "2026-09-24T09:14:37.106488+09:00",
+  "fetched_at": "2026-09-24T16:43:06.110113+09:00",
   "videos": [
+    {
+      "video_id": "ih3DjLjH4h0",
+      "title": "이거 그린라이트인가?💡",
+      "url": "https://www.youtube.com/watch?v=ih3DjLjH4h0",
+      "thumbnail": "https://i.ytimg.com/vi/ih3DjLjH4h0/hqdefault.jpg",
+      "published_at": "2026-09-24T03:00:37Z",
+      "duration": 45,
+      "format": "shorts",
+      "frozen": false,
+      "metrics": {
+        "views": 943,
+        "likes": 0,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-09-24T16:43:06.110113+09:00"
+    },
     {
       "video_id": "b5wi7Uzf99Y",
       "title": "가능..? 불가능...?",
@@ -15,11 +31,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 954,
-        "likes": 2,
+        "views": 1147,
+        "likes": 3,
         "comments": 0
       },
-      "metrics_updated_at": "2026-09-24T09:14:37.106488+09:00"
+      "metrics_updated_at": "2026-09-24T16:43:06.110113+09:00"
     },
     {
       "video_id": "J6YExJTLjBw",
@@ -31,11 +47,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 1185,
+        "views": 1195,
         "likes": 1,
         "comments": 0
       },
-      "metrics_updated_at": "2026-09-24T09:14:37.106488+09:00"
+      "metrics_updated_at": "2026-09-24T16:43:06.110113+09:00"
     },
     {
       "video_id": "MuhYpeZIopc",
@@ -47,11 +63,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 318,
+        "views": 365,
         "likes": 7,
         "comments": 0
       },
-      "metrics_updated_at": "2026-09-24T09:14:37.106488+09:00"
+      "metrics_updated_at": "2026-09-24T16:43:06.110113+09:00"
     },
     {
       "video_id": "0Tjp5OwlNSk",
@@ -3186,22 +3202,6 @@
         "views": 3795,
         "likes": 53,
         "comments": 5
-      },
-      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
-    },
-    {
-      "video_id": "M8tJbIkWSoc",
-      "title": "바다에 산타가 나타났다고?🧑‍🎄",
-      "url": "https://www.youtube.com/watch?v=M8tJbIkWSoc",
-      "thumbnail": "https://i.ytimg.com/vi/M8tJbIkWSoc/hqdefault.jpg",
-      "published_at": "2024-05-21T02:58:29Z",
-      "duration": 15,
-      "format": "shorts",
-      "frozen": true,
-      "metrics": {
-        "views": 1217,
-        "likes": 3,
-        "comments": 0
       },
       "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
     }
