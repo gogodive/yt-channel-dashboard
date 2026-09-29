@@ -2,7 +2,9 @@ name: daily-feed
 
 on:
   schedule:
-    - cron: "0 22 * * *"   # 22:00 UTC = 07:00 KST
+    # 정각(매시 0분)은 GitHub Actions 가 가장 붐벼 예약이 2~3시간 밀렸다.
+    # 정각을 피하고 일찍 당겨, 지연이 남아도 07시 전후엔 갱신되게 한다.
+    - cron: "17 20 * * *"   # 20:17 UTC = 05:17 KST
   workflow_dispatch:
 
 permissions:
