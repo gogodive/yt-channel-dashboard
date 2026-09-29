@@ -3,8 +3,24 @@
   "handle": "gogodive",
   "channel_title": "고고다이브",
   "subscribers": 12200,
-  "fetched_at": "2026-09-28T09:18:32.115447+09:00",
+  "fetched_at": "2026-09-29T10:29:02.030677+09:00",
   "videos": [
+    {
+      "video_id": "w4NSaZRNPdY",
+      "title": "쩝쩝쯔압쯔압짭짭",
+      "url": "https://www.youtube.com/watch?v=w4NSaZRNPdY",
+      "thumbnail": "https://i.ytimg.com/vi/w4NSaZRNPdY/hqdefault.jpg",
+      "published_at": "2026-09-28T08:45:09Z",
+      "duration": 47,
+      "format": "shorts",
+      "frozen": false,
+      "metrics": {
+        "views": 1252,
+        "likes": 1,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-09-29T10:29:02.030677+09:00"
+    },
     {
       "video_id": "5ExflX_Ne1o",
       "title": "뽀로록…🫧",
@@ -15,11 +31,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 1236,
+        "views": 1245,
         "likes": 3,
         "comments": 0
       },
-      "metrics_updated_at": "2026-09-28T09:18:32.115447+09:00"
+      "metrics_updated_at": "2026-09-29T10:29:02.030677+09:00"
     },
     {
       "video_id": "ih3DjLjH4h0",
@@ -31,11 +47,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 1220,
+        "views": 1226,
         "likes": 0,
         "comments": 0
       },
-      "metrics_updated_at": "2026-09-28T09:18:32.115447+09:00"
+      "metrics_updated_at": "2026-09-29T10:29:02.030677+09:00"
     },
     {
       "video_id": "b5wi7Uzf99Y",
@@ -47,11 +63,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 1357,
+        "views": 1362,
         "likes": 3,
         "comments": 0
       },
-      "metrics_updated_at": "2026-09-28T09:18:32.115447+09:00"
+      "metrics_updated_at": "2026-09-29T10:29:02.030677+09:00"
     },
     {
       "video_id": "J6YExJTLjBw",
@@ -63,11 +79,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 1242,
+        "views": 1246,
         "likes": 1,
         "comments": 0
       },
-      "metrics_updated_at": "2026-09-28T09:18:32.115447+09:00"
+      "metrics_updated_at": "2026-09-29T10:29:02.030677+09:00"
     },
     {
       "video_id": "MuhYpeZIopc",
@@ -79,11 +95,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 687,
+        "views": 707,
         "likes": 6,
         "comments": 0
       },
-      "metrics_updated_at": "2026-09-28T09:18:32.115447+09:00"
+      "metrics_updated_at": "2026-09-29T10:29:02.030677+09:00"
     },
     {
       "video_id": "0Tjp5OwlNSk",
@@ -3185,22 +3201,6 @@
       "metrics": {
         "views": 2523,
         "likes": 40,
-        "comments": 0
-      },
-      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
-    },
-    {
-      "video_id": "XOd666cXDuU",
-      "title": "상어가 내 머리에 있는 경험🦈",
-      "url": "https://www.youtube.com/watch?v=XOd666cXDuU",
-      "thumbnail": "https://i.ytimg.com/vi/XOd666cXDuU/hqdefault.jpg",
-      "published_at": "2024-05-24T09:00:28Z",
-      "duration": 9,
-      "format": "shorts",
-      "frozen": true,
-      "metrics": {
-        "views": 701,
-        "likes": 10,
         "comments": 0
       },
       "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
