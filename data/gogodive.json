@@ -3,7 +3,7 @@
   "handle": "gogodive",
   "channel_title": "고고다이브",
   "subscribers": 12200,
-  "fetched_at": "2026-10-04T08:08:01.262477+09:00",
+  "fetched_at": "2026-10-05T08:15:11.522305+09:00",
   "videos": [
     {
       "video_id": "w4NSaZRNPdY",
@@ -15,11 +15,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 1330,
+        "views": 1347,
         "likes": 1,
         "comments": 0
       },
-      "metrics_updated_at": "2026-10-04T08:08:01.262477+09:00"
+      "metrics_updated_at": "2026-10-05T08:15:11.522305+09:00"
     },
     {
       "video_id": "5ExflX_Ne1o",
@@ -31,11 +31,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 1272,
+        "views": 1273,
         "likes": 3,
         "comments": 0
       },
-      "metrics_updated_at": "2026-10-04T08:08:01.262477+09:00"
+      "metrics_updated_at": "2026-10-05T08:15:11.522305+09:00"
     },
     {
       "video_id": "ih3DjLjH4h0",
@@ -51,7 +51,7 @@
         "likes": 0,
         "comments": 0
       },
-      "metrics_updated_at": "2026-10-04T08:08:01.262477+09:00"
+      "metrics_updated_at": "2026-10-05T08:15:11.522305+09:00"
     },
     {
       "video_id": "b5wi7Uzf99Y",
@@ -67,7 +67,7 @@
         "likes": 3,
         "comments": 0
       },
-      "metrics_updated_at": "2026-10-04T08:08:01.262477+09:00"
+      "metrics_updated_at": "2026-10-05T08:15:11.522305+09:00"
     },
     {
       "video_id": "J6YExJTLjBw",
@@ -83,7 +83,7 @@
         "likes": 1,
         "comments": 0
       },
-      "metrics_updated_at": "2026-10-04T08:08:01.262477+09:00"
+      "metrics_updated_at": "2026-10-05T08:15:11.522305+09:00"
     },
     {
       "video_id": "MuhYpeZIopc",
@@ -95,11 +95,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 779,
+        "views": 796,
         "likes": 7,
         "comments": 0
       },
-      "metrics_updated_at": "2026-10-04T08:08:01.262477+09:00"
+      "metrics_updated_at": "2026-10-05T08:15:11.522305+09:00"
     },
     {
       "video_id": "0Tjp5OwlNSk",
