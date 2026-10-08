@@ -2,8 +2,8 @@
   "brand": "고고다이브",
   "handle": "gogodive",
   "channel_title": "고고다이브",
-  "subscribers": 12200,
-  "fetched_at": "2026-10-07T08:52:14.269234+09:00",
+  "subscribers": 12300,
+  "fetched_at": "2026-10-08T09:14:52.880074+09:00",
   "videos": [
     {
       "video_id": "w4NSaZRNPdY",
@@ -15,11 +15,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 1361,
+        "views": 1362,
         "likes": 1,
         "comments": 0
       },
-      "metrics_updated_at": "2026-10-07T08:52:14.269234+09:00"
+      "metrics_updated_at": "2026-10-08T09:14:52.880074+09:00"
     },
     {
       "video_id": "5ExflX_Ne1o",
@@ -31,11 +31,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 1274,
+        "views": 1275,
         "likes": 3,
         "comments": 0
       },
-      "metrics_updated_at": "2026-10-07T08:52:14.269234+09:00"
+      "metrics_updated_at": "2026-10-08T09:14:52.880074+09:00"
     },
     {
       "video_id": "ih3DjLjH4h0",
@@ -47,11 +47,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 1243,
+        "views": 1244,
         "likes": 0,
         "comments": 0
       },
-      "metrics_updated_at": "2026-10-07T08:52:14.269234+09:00"
+      "metrics_updated_at": "2026-10-08T09:14:52.880074+09:00"
     },
     {
       "video_id": "b5wi7Uzf99Y",
@@ -63,11 +63,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 1372,
+        "views": 1373,
         "likes": 3,
         "comments": 0
       },
-      "metrics_updated_at": "2026-10-07T08:52:14.269234+09:00"
+      "metrics_updated_at": "2026-10-08T09:14:52.880074+09:00"
     },
     {
       "video_id": "J6YExJTLjBw",
@@ -79,11 +79,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 1257,
+        "views": 1258,
         "likes": 1,
         "comments": 0
       },
-      "metrics_updated_at": "2026-10-07T08:52:14.269234+09:00"
+      "metrics_updated_at": "2026-10-08T09:14:52.880074+09:00"
     },
     {
       "video_id": "MuhYpeZIopc",
@@ -95,11 +95,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 822,
+        "views": 832,
         "likes": 7,
         "comments": 0
       },
-      "metrics_updated_at": "2026-10-07T08:52:14.269234+09:00"
+      "metrics_updated_at": "2026-10-08T09:14:52.880074+09:00"
     },
     {
       "video_id": "0Tjp5OwlNSk",
@@ -167,7 +167,7 @@
     },
     {
       "video_id": "4U41u4bylwU",
-      "title": "[프리토크] EP.2 | 캐리어 분실 vs 역대 최악의 멤버 | 여행",
+      "title": "[프리토크] EP.2 | 혼자 떠났는데 결혼까지?",
       "url": "https://www.youtube.com/watch?v=4U41u4bylwU",
       "thumbnail": "https://i.ytimg.com/vi/4U41u4bylwU/hqdefault.jpg",
       "published_at": "2026-08-04T09:30:08Z",
@@ -247,7 +247,7 @@
     },
     {
       "video_id": "y5KEq-gFk6c",
-      "title": "[프리토크 EP.01] 잠수이별한 X가 버디로 나타났다｜’버디’",
+      "title": "[프리토크 EP.01] 잠수이별한 X와 버디 가능?",
       "url": "https://www.youtube.com/watch?v=y5KEq-gFk6c",
       "thumbnail": "https://i.ytimg.com/vi/y5KEq-gFk6c/hqdefault.jpg",
       "published_at": "2026-07-15T09:00:30Z",
