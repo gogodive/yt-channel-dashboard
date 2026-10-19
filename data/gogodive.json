@@ -3,7 +3,7 @@
   "handle": "gogodive",
   "channel_title": "고고다이브",
   "subscribers": 12300,
-  "fetched_at": "2026-10-19T07:27:25.726771+09:00",
+  "fetched_at": "2026-10-20T08:46:06.667799+09:00",
   "videos": [
     {
       "video_id": "w4NSaZRNPdY",
@@ -15,11 +15,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 1383,
+        "views": 1385,
         "likes": 1,
         "comments": 0
       },
-      "metrics_updated_at": "2026-10-19T07:27:25.726771+09:00"
+      "metrics_updated_at": "2026-10-20T08:46:06.667799+09:00"
     },
     {
       "video_id": "5ExflX_Ne1o",
@@ -31,11 +31,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 1281,
+        "views": 1283,
         "likes": 3,
         "comments": 0
       },
-      "metrics_updated_at": "2026-10-19T07:27:25.726771+09:00"
+      "metrics_updated_at": "2026-10-20T08:46:06.667799+09:00"
     },
     {
       "video_id": "ih3DjLjH4h0",
@@ -47,11 +47,11 @@
       "format": "shorts",
       "frozen": false,
       "metrics": {
-        "views": 1248,
+        "views": 1251,
         "likes": 0,
         "comments": 0
       },
-      "metrics_updated_at": "2026-10-19T07:27:25.726771+09:00"
+      "metrics_updated_at": "2026-10-20T08:46:06.667799+09:00"
     },
     {
       "video_id": "b5wi7Uzf99Y",
@@ -67,7 +67,7 @@
         "likes": 3,
         "comments": 0
       },
-      "metrics_updated_at": "2026-10-19T07:27:25.726771+09:00"
+      "metrics_updated_at": "2026-10-20T08:46:06.667799+09:00"
     },
     {
       "video_id": "J6YExJTLjBw",
@@ -83,7 +83,7 @@
         "likes": 1,
         "comments": 0
       },
-      "metrics_updated_at": "2026-10-19T07:27:25.726771+09:00"
+      "metrics_updated_at": "2026-10-20T08:46:06.667799+09:00"
     },
     {
       "video_id": "MuhYpeZIopc",
@@ -95,11 +95,11 @@
       "format": "long",
       "frozen": false,
       "metrics": {
-        "views": 895,
+        "views": 901,
         "likes": 8,
         "comments": 1
       },
-      "metrics_updated_at": "2026-10-19T07:27:25.726771+09:00"
+      "metrics_updated_at": "2026-10-20T08:46:06.667799+09:00"
     },
     {
       "video_id": "0Tjp5OwlNSk",
