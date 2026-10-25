@@ -35,14 +35,23 @@ def _plain_text(block: dict) -> str:
 
 
 def build_status_text(generated_at: datetime, analyzed_at: str | None,
-                      url: str, label: str = MARKER) -> list[dict]:
+                      url: str, label: str = MARKER,
+                      ai_error: str | None = None) -> list[dict]:
     """콜아웃에 넣을 Notion rich_text 페이로드 (순수 함수)."""
     parts: list[dict] = [
         {"type": "text", "text": {"content": label}, "annotations": {"bold": True}},
         {"type": "text",
          "text": {"content": f" · 데이터 {generated_at.strftime('%Y-%m-%d %H:%M')} 갱신"}},
     ]
-    if analyzed_at:
+    if ai_error:
+        parts.append({"type": "text", "text": {"content": " · "}})
+        parts.append({"type": "text",
+                      "text": {"content": f"⚠️ AI 썸네일 분석 실패 ({ai_error})"},
+                      "annotations": {"bold": True, "color": "red"}})
+        if analyzed_at:
+            parts.append({"type": "text",
+                          "text": {"content": f" — 마지막 성공 {analyzed_at[:10]}"}})
+    elif analyzed_at:
         parts.append({"type": "text",
                       "text": {"content": f" · AI 썸네일 분석 {analyzed_at[:10]} 기준"}})
     parts.append({"type": "text", "text": {"content": " · "}})
@@ -71,9 +80,8 @@ def update_hub_callout(config: dict, accounts: list[dict], now: datetime) -> boo
         log.warning("NOTION_TOKEN 없음 — 노션 허브 콜아웃 갱신 건너뜀")
         return False
 
-    analyzed_at = next(
-        (a["_ai_comment"]["generated_at"] for a in accounts
-         if (a.get("_ai_comment") or {}).get("generated_at")), None)
+    ai = next((a["_ai_comment"] for a in accounts if a.get("_ai_comment")), None) or {}
+    analyzed_at, ai_error = ai.get("generated_at"), ai.get("error")
 
     try:
         session = requests.Session()
@@ -84,8 +92,14 @@ def update_hub_callout(config: dict, accounts: list[dict], now: datetime) -> boo
         r = session.patch(
             f"{API}/blocks/{block_id}",
             headers=_headers(token),
-            json={"callout": {"rich_text": build_status_text(
-                now, analyzed_at, cfg.get("dashboard_url", ""))}},
+            json={"callout": {
+                "rich_text": build_status_text(now, analyzed_at,
+                                               cfg.get("dashboard_url", ""),
+                                               ai_error=ai_error),
+                # 실패 중에는 아이콘·배경까지 바꿔 한눈에 띄게 한다.
+                "icon": {"type": "emoji", "emoji": "⚠️" if ai_error else "🔄"},
+                "color": "red_background" if ai_error else "gray_background",
+            }},
             timeout=30)
         r.raise_for_status()
         log.info("노션 허브 콜아웃 갱신 완료")

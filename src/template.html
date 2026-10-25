@@ -97,7 +97,7 @@
     {% if acc._stale_date %}
     <div class="stale">⚠️ 이 채널은 {{ acc._stale_date }} 데이터입니다 (최근 수집 실패)</div>
     {% endif %}
-    {% if acc._ai_comment %}
+    {% if acc._ai_comment and acc._ai_comment.comment %}
     <div class="ai">
       <div class="ai-title">🤖 AI 썸네일 분석 (히트 영상 기준)
         {% if acc._ai_comment.generated_at %}<span class="ai-date">분석 기준일 {{ acc._ai_comment.generated_at | date }}</span>{% endif %}

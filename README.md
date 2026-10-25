@@ -59,5 +59,7 @@ pytest -v
 - **쇼츠/롱폼이 잘못 분류됨** — data/<handle>.json 에서 해당 영상의 `format` 값을 수정하면 유지됨
 - **노션 콜아웃이 안 바뀜** — `NOTION_TOKEN` 시크릿 등록 여부, 대상 페이지에 integration 을
   '연결'했는지, 콜아웃에 "대시보드 자동 갱신" 문구가 남아 있는지 확인
+- **노션 콜아웃이 빨간 ⚠️ 로 바뀜** — AI 분석 실패. 괄호 안 사유 확인
+  ("API 크레딧 부족"이면 console.anthropic.com → Plans & Billing 에서 충전). 고치면 다음 실행에서 자동 복구
 - **AI 코멘트가 안 나옴** — `ANTHROPIC_API_KEY` 시크릿 등록 여부 확인, 히트 영상이 없으면 생성 안 함
 - **실행 실패 메일** — GitHub 이 workflow 실패 시 자동 발송. Actions 탭에서 로그 확인

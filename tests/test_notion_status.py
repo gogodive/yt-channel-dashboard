@@ -123,3 +123,36 @@ def test_marker_does_not_match_description_callout():
         callout_block("status", f"{MARKER} · 데이터 ... 갱신"),
     ])
     assert find_status_block_id(session, "tok", "page123") == "status"
+
+
+def test_build_status_text_with_error_shows_warning():
+    parts = build_status_text(NOW, "2026-09-28T09:18:00+09:00", URL, ai_error="API 크레딧 부족")
+    text = flat(parts)
+    assert text.startswith(MARKER)               # 마커가 남아야 다음 실행에도 찾는다
+    assert "⚠️ AI 썸네일 분석 실패 (API 크레딧 부족)" in text
+    assert "마지막 성공 2026-09-28" in text
+    assert "기준" not in text
+    warn = next(p for p in parts if "⚠️" in p["text"]["content"])
+    assert warn["annotations"]["color"] == "red"
+
+
+def test_update_sets_warning_icon_and_color_on_error(monkeypatch):
+    monkeypatch.setenv("NOTION_TOKEN", "tok")
+    session = FakeSession([callout_block("b2", f"{MARKER} · 이전 내용")])
+    monkeypatch.setattr("src.notion_status.requests.Session", lambda: session)
+    acc = {"handle": "gogodive", "_ai_comment": {
+        "comment": "c", "generated_at": "2026-09-28T09:18:00+09:00", "error": "API 크레딧 부족"}}
+    assert update_hub_callout(CONFIG, [acc], NOW) is True
+    callout = session.patched[0][1]["callout"]
+    assert callout["icon"]["emoji"] == "⚠️"
+    assert callout["color"] == "red_background"
+
+
+def test_update_resets_icon_and_color_when_ok(monkeypatch):
+    monkeypatch.setenv("NOTION_TOKEN", "tok")
+    session = FakeSession([callout_block("b2", f"{MARKER} · 이전 내용")])
+    monkeypatch.setattr("src.notion_status.requests.Session", lambda: session)
+    assert update_hub_callout(CONFIG, [account()], NOW) is True
+    callout = session.patched[0][1]["callout"]
+    assert callout["icon"]["emoji"] == "🔄"
+    assert callout["color"] == "gray_background"

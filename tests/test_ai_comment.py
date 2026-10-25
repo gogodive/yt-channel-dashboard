@@ -241,3 +241,42 @@ def test_generate_raises_on_empty(monkeypatch):
     with pytest.raises(RuntimeError, match="빈 응답"):
         run_generate(monkeypatch, FakeResponse([FakeBlock("thinking")],
                                                stop_reason="max_tokens"))
+
+
+# ── 실패 기록: 노션 ⚠️ 표시와 다음 날 재시도의 근거 ──────────────────────
+
+def test_failure_keeps_comment_and_records_error(tmp_path, monkeypatch):
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "test-key")
+    hits = [video("h1", 500)]
+    write_cache(tmp_path, hits, comment="지난 분석", model="claude-opus-4-8")
+
+    def no_credit(*a, **k):
+        raise RuntimeError("Error code: 400 - Your credit balance is too low")
+
+    monkeypatch.setattr(ai_comment, "generate", no_credit)
+    out = maybe_generate(account(hits), hits,
+                         {"ai_comment": {"model": "claude-opus-5-5"}}, tmp_path, MONDAY)
+    assert out["comment"] == "지난 분석"          # 대시보드는 지난 분석을 계속 보여준다
+    assert out["error"] == "API 크레딧 부족"
+    cached = json.loads((tmp_path / "ai_comment_gogodive.json").read_text())
+    assert cached["comment"] == "지난 분석"
+    assert cached["last_error"] == "API 크레딧 부족"
+
+
+def test_retries_next_day_when_error_pending_and_clears_it(tmp_path, monkeypatch):
+    """실패 기록이 있으면 월요일이 아니어도, 히트가 그대로여도 다시 시도한다."""
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "test-key")
+    hits = [video("h1", 500)]
+    write_cache(tmp_path, hits, comment="지난 분석")
+    p = tmp_path / "ai_comment_gogodive.json"
+    p.write_text(json.dumps({**json.loads(p.read_text()), "last_error": "API 크레딧 부족"}))
+
+    monkeypatch.setattr(ai_comment, "generate", lambda *a, **k: "복구된 분석")
+    out = maybe_generate(account(hits), hits, {}, tmp_path, NOW)   # 일요일
+    assert out["comment"] == "복구된 분석"
+    assert out["error"] is None
+    assert "last_error" not in json.loads(p.read_text())
+
+
+def test_describe_error_falls_back_to_type_and_message():
+    assert ai_comment._describe_error(RuntimeError("빈 응답")) == "RuntimeError: 빈 응답"

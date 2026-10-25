@@ -120,3 +120,13 @@ def test_render_html_stale_banner():
     }
     html = render_html([account], NOW)
     assert "최근 수집 실패" in html
+
+
+def test_ai_box_hidden_when_only_error_and_no_comment():
+    """첫 분석부터 실패하면 코멘트가 없으므로 빈 AI 박스를 그리지 않는다."""
+    account = {
+        "brand": "고고다이브", "handle": "gogodive", "subscribers": 1,
+        "fetched_at": NOW.isoformat(), "videos": [],
+        "_ai_comment": {"comment": None, "generated_at": None, "error": "API 크레딧 부족"},
+    }
+    assert 'class="ai-body"' not in render_html([account], NOW)

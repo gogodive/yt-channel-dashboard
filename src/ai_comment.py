@@ -82,9 +82,18 @@ def load_cache(data_dir: Path, handle: str) -> dict | None:
 
 
 def _result(cached: dict | None) -> dict | None:
-    if cached and cached.get("comment"):
-        return {"comment": cached["comment"], "generated_at": cached.get("generated_at")}
-    return None
+    if not cached or not (cached.get("comment") or cached.get("last_error")):
+        return None
+    return {"comment": cached.get("comment"), "generated_at": cached.get("generated_at"),
+            "error": cached.get("last_error")}
+
+
+def _describe_error(e: Exception) -> str:
+    """노션 상태 표기에 넣을 짧은 실패 사유."""
+    msg = str(e)
+    if "credit balance" in msg:
+        return "API 크레딧 부족"
+    return f"{type(e).__name__}: {msg[:80]}"
 
 
 def is_weekly_refresh_due(cached: dict | None, now: datetime) -> bool:
@@ -179,7 +188,9 @@ def maybe_generate(account: dict, hits: list[dict], config: dict,
     model = ai_cfg.get("model", DEFAULT_MODEL)
     prompt_changed = (cached or {}).get("prompt_fp") != PROMPT_FINGERPRINT
     model_changed = (cached or {}).get("model") != model
-    if not (hits_changed or prompt_changed or model_changed
+    # 직전 시도가 실패했으면 월요일까지 기다리지 않고 매일 재시도한다.
+    error_pending = bool((cached or {}).get("last_error"))
+    if not (hits_changed or prompt_changed or model_changed or error_pending
             or is_weekly_refresh_due(cached, now)):
         return _result(cached)
     if not os.environ.get("ANTHROPIC_API_KEY"):
@@ -193,9 +204,14 @@ def maybe_generate(account: dict, hits: list[dict], config: dict,
                              ai_cfg.get("max_baseline", 6))
     try:
         comment = generate(account["brand"], hits, baseline, model, new_ids)
-    except Exception:
+    except Exception as e:
         log.exception("%s: AI 썸네일 코멘트 생성 실패 — 이전 코멘트 유지", handle)
-        return _result(cached)
+        # 실패를 캐시에 남겨야 노션에 ⚠️ 가 계속 보이고, 다음 날 재시도된다.
+        failed = {**(cached or {}), "last_error": _describe_error(e),
+                  "last_error_at": now.isoformat()}
+        _cache_path(data_dir, handle).write_text(
+            json.dumps(failed, ensure_ascii=False, indent=2), encoding="utf-8")
+        return _result(failed)
 
     cache = {"hit_key": key, "hit_ids": sorted(v["video_id"] for v in hits),
              "prompt_fp": PROMPT_FINGERPRINT, "model": model,
