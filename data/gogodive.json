@@ -3,8 +3,40 @@
   "handle": "gogodive",
   "channel_title": "고고다이브",
   "subscribers": 12400,
-  "fetched_at": "2026-11-24T13:50:16.341775+09:00",
+  "fetched_at": "2026-11-25T12:34:11.624425+09:00",
   "videos": [
+    {
+      "video_id": "teLD3IBGT7U",
+      "title": "일은 일이고, 프리다이빙은 프리다이빙이지 ... 🤿",
+      "url": "https://www.youtube.com/watch?v=teLD3IBGT7U",
+      "thumbnail": "https://i.ytimg.com/vi/teLD3IBGT7U/hqdefault.jpg",
+      "published_at": "2026-11-25T00:59:46Z",
+      "duration": 10,
+      "format": "shorts",
+      "frozen": false,
+      "metrics": {
+        "views": 992,
+        "likes": 0,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-11-25T12:34:11.624425+09:00"
+    },
+    {
+      "video_id": "izR0n94fNNI",
+      "title": "아무리 AI라도…프다는 직접 못하겠지..🥹",
+      "url": "https://www.youtube.com/watch?v=izR0n94fNNI",
+      "thumbnail": "https://i.ytimg.com/vi/izR0n94fNNI/hqdefault.jpg",
+      "published_at": "2026-11-24T06:57:09Z",
+      "duration": 38,
+      "format": "shorts",
+      "frozen": false,
+      "metrics": {
+        "views": 1081,
+        "likes": 7,
+        "comments": 0
+      },
+      "metrics_updated_at": "2026-11-25T12:34:11.624425+09:00"
+    },
     {
       "video_id": "w4NSaZRNPdY",
       "title": "쩝쩝쯔압쯔압짭짭",
@@ -3170,38 +3202,6 @@
         "views": 7599,
         "likes": 35,
         "comments": 6
-      },
-      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
-    },
-    {
-      "video_id": "qRrA8YSXDMc",
-      "title": "머메이드다이빙 들어보셨나요🧜 직장인 취미 추천 VLOG (웃참챌린지)",
-      "url": "https://www.youtube.com/watch?v=qRrA8YSXDMc",
-      "thumbnail": "https://i.ytimg.com/vi/qRrA8YSXDMc/hqdefault.jpg",
-      "published_at": "2024-05-30T09:00:43Z",
-      "duration": 631,
-      "format": "long",
-      "frozen": true,
-      "metrics": {
-        "views": 4655,
-        "likes": 95,
-        "comments": 48
-      },
-      "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
-    },
-    {
-      "video_id": "FdegjuGcacQ",
-      "title": "프리다이빙 한다면 꼭 가야하는 곳 #로타",
-      "url": "https://www.youtube.com/watch?v=FdegjuGcacQ",
-      "thumbnail": "https://i.ytimg.com/vi/FdegjuGcacQ/hqdefault.jpg",
-      "published_at": "2024-05-30T06:20:55Z",
-      "duration": 9,
-      "format": "shorts",
-      "frozen": true,
-      "metrics": {
-        "views": 2523,
-        "likes": 40,
-        "comments": 0
       },
       "metrics_updated_at": "2026-07-14T13:07:37.190393+09:00"
     }
